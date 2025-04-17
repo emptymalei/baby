@@ -1,18 +1,44 @@
-# Quartz v4
+# Parents and Baby Book
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+## How to Contribute
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+This repository contains mostly markdown files. To make sure we have the same conventions, we have added markdownlint tools to pre-commit. So please install [pre-commit](https://pre-commit.com/) then run the following command the first time you cloned the repository.
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+```bash
+pre-commit install
+```
 
-## Sponsors
+### Preview Requires Python
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+Install the requirements using
+
+```
+poetry install
+```
+
+Preview the docs:
+
+```python
+poetry run mkdocs serve -s
+```
+
+### Developing Notebooks
+
+We use jupytext to sync the `.py` files to `.ipynb` files. `.ipynb` files are ignore in git.
+Please pair the `.py` file with the `.ipynb` using jupytext in jupyterlab first.
+
+### Optional Requirements
+
+> The pdf generation is done by the [mkdocs-with-pdf](https://github.com/orzih/mkdocs-with-pdf) plugin.
+
+To generate PDF locally, please install [cairo, Pango and GDK-PixBuf ](https://doc.courtbouillon.org/weasyprint/latest/first_steps.html#macos).
+
+
+#### Install pango on Mac
+
+When installing pango on Mac using homebrew, the path for `DYLD_LIBRARY_PATH` are not automatically updated. So we need to add the correct path for pango, harfbuzz, and fontconfig. For example,
+
+```
+export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/Users/itsme/homebrew/Cellar/pango/1.48.8/lib:/Users/itsme/homebrew/Cellar/harfbuzz/2.8.2/lib:/Users/itsme/homebrew/Cellar/fontconfig/2.13.1/lib
+```

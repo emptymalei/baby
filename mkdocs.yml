@@ -1,0 +1,174 @@
+# mkdocs.yml
+site_name: "The Parents and Baby Book"
+site_author: "Lei Ma"
+site_description: "Time Series with Deep Learning Quick Bite"
+site_url: "https://emptymalei.github.io/baby"
+repo_url: "https://github.com/emptymalei/baby"
+edit_uri: "blob/main/baby/"
+repo_name: "emptymalei/baby"
+docs_dir: "book"
+
+
+theme:
+  name: "material"
+  custom_dir: theme/overrides
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features:
+    # - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+  palette:
+    - scheme: default
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/logo_badge.svg
+  logo: assets/logo_badge.svg
+
+
+
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.magiclink
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: "¶"
+  - footnotes
+  - pymdownx.details
+
+
+extra_javascript:
+  - assets/js/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
+
+
+plugins:
+  - obsidian-interactive-graph
+  - autorefs
+  - git-authors
+  - search
+  # - exclude-search:
+  #     exclude:
+  #       - notebooks/tree_darts
+  - tags:
+      tags_file: tags.md
+  - bibtex:
+      bib_dir: "book/assets/references"
+      csl_file: "book/assets/csl/nature-publishing-group-vancouver.csl" # https://github.com/citation-style-language/styles/blob/master/nature-publishing-group-vancouver.csl
+  - mkdocs-jupyter:
+      include: ["*.py"]
+      ignore: ["notebooks/.ipynb_checkpoints/*"]
+      include_source: true
+      execute: false
+  - print-site:
+      add_to_navigation: false
+      print_page_title: 'The Parents and Baby Book'
+      add_print_site_banner: false
+      # Table of contents
+      add_table_of_contents: true
+      toc_title: 'Table of Contents'
+      toc_depth: 6
+      # Content-related
+      add_full_urls: false
+      enumerate_headings: true
+      enumerate_figures: true
+      include_css: true
+      enabled: true
+      exclude:
+  # - with-pdf:
+  #     author: "Lei Ma"
+  #     output_path: pdf/dl-lm.pdf
+  #     cover_logo: assets/logo_badge.svg
+  #     cover_subtitle: "Deep Learning Quick Bite"
+  #     two_columns_level: 3
+  #     enabled_if_env: ENABLE_PDF_EXPORT
+  #     render_js: true
+  #     headless_chrome_path: "/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+  #######
+  # For Linux
+  # - with-pdf:
+  #     author: "Lei Ma"
+  #     output_path: pdf/dl-lm.pdf
+  #     cover_logo: assets/logo_badge.svg
+  #     cover_subtitle: "Time Series with Deep Learning Quick Bite"
+  #     two_columns_level: 3
+  #     enabled_if_env: ENABLE_PDF_EXPORT
+  #     render_js: true
+  #     headless_chrome_path: "google-chrome"
+
+
+
+extra:
+  # analytics:
+  #   provider: google
+  #   property: G-9XN0RGHSE1
+  #   feedback:
+  #     title: Was this page helpful?
+  #     ratings:
+  #       - icon: material/emoticon-happy-outline
+  #         name: This page was helpful
+  #         data: 1
+  #         note: >-
+  #           Thanks for your feedback!
+  #       - icon: material/emoticon-sad-outline
+  #         name: This page could be improved
+  #         data: 0
+  #         note: >-
+  #           Thanks for your feedback! Help us improve this page by
+  #           using our <a href="https://github.com/emptymalei/baby/issues" target="_blank" rel="noopener">GitHub Issues or Discussions</a>.
+  # consent:
+  #   title: Cookie consent
+  #   description: >-
+  #     We use cookies to recognize your repeated visits and preferences, as well
+  #     as to measure the effectiveness of our documentation and whether users
+  #     find what they're searching for. With your consent, you're helping us to
+  #     make our documentation better.
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/emptymalei/baby
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/leima137/
+
+
+
+nav:
+  - "Home": index.md
+  - "About":
+    - "Roadmap": meta/roadmap.md
+    - "Changelog": meta/changelog.md

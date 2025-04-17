@@ -1,0 +1,39 @@
+name: Publish Docs Test
+
+on:
+  pull_request:
+  push:
+    branches:
+      - "!master"
+      - "!main"
+  workflow_dispatch:
+    inputs:
+      directory:
+        description: 'Test it'
+        default: 'gogogo'
+        required: false
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+    - uses: pre-commit/action@v3.0.0
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - uses: actions/setup-python@v5.3.0
+        with:
+          python-version: "3.10.14"
+      - name: Setup Poetry
+        uses: abatilo/actions-poetry@v3.0.0
+        with:
+          poetry-version: 1.8.3
+      - name: Install dependencies
+        run: |
+          poetry --version
+          poetry install
+      - uses: nikeee/setup-pandoc@v1
+      - run: poetry run mkdocs build

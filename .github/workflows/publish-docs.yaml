@@ -1,0 +1,34 @@
+name: Publish Docs without PDF
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  workflow_dispatch:
+    inputs:
+      directory:
+        description: 'Release it'
+        default: 'gogogo'
+        required: false
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10.14"
+      - name: Setup Poetry
+        uses: abatilo/actions-poetry@v3.0.0
+        with:
+          poetry-version: 1.8.3
+      - name: Install dependencies
+        run: |
+          poetry --version
+          poetry install
+      - uses: nikeee/setup-pandoc@v1
+      # - run: pip install -r requirements.txt
+      - run: poetry run mkdocs gh-deploy --force
