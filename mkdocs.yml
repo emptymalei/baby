@@ -180,6 +180,9 @@ extra:
 
 nav:
   - "Home": index.md
+  - "Pregnancy":
+    - "Overview": pregnancy/index.md
+    - "Pregnancy Symptoms": pregnancy/pregnancy-symptoms.md
   - "About":
     - "Roadmap": meta/roadmap.md
     - "Changelog": meta/changelog.md
