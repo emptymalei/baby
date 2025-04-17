@@ -5,5 +5,3 @@ hide:
 
 
 # The Parents and Baby Book
-
-
