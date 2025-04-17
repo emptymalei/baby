@@ -2,7 +2,7 @@
 site_name: "The Parents and Baby Book"
 site_author: "Lei Ma"
 site_description: "Time Series with Deep Learning Quick Bite"
-site_url: "https://emptymalei.github.io/baby"
+site_url: "https://baby.leima.is"
 repo_url: "https://github.com/emptymalei/baby"
 edit_uri: "blob/main/baby/"
 repo_name: "emptymalei/baby"
@@ -11,7 +11,7 @@ docs_dir: "book"
 
 theme:
   name: "material"
-  custom_dir: theme/overrides
+  # custom_dir: theme/overrides
   # Don't include MkDocs' JavaScript
   include_search_page: false
   search_index_only: true
@@ -71,18 +71,29 @@ markdown_extensions:
 
 
 extra_javascript:
-  - assets/js/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - assets/javascripts/mathjax.js
+  # - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # - https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js
+  # - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
+  - assets/javascripts/jquery.min.js
+  - assets/javascripts/echarts.min.js
+  - assets/javascripts/interactive_graph.js
 
+extra_css:
+  - assets/stylesheets/interactive_graph.css
+  - assets/stylesheets/obsidian_tags.css
 
 
 
 plugins:
+  - search
+  - callouts
   - obsidian-interactive-graph
+  - obsidian-bridge
+  - glightbox
   - autorefs
   - git-authors
-  - search
   # - exclude-search:
   #     exclude:
   #       - notebooks/tree_darts
@@ -91,11 +102,11 @@ plugins:
   - bibtex:
       bib_dir: "book/assets/references"
       csl_file: "book/assets/csl/nature-publishing-group-vancouver.csl" # https://github.com/citation-style-language/styles/blob/master/nature-publishing-group-vancouver.csl
-  - mkdocs-jupyter:
-      include: ["*.py"]
-      ignore: ["notebooks/.ipynb_checkpoints/*"]
-      include_source: true
-      execute: false
+  # - mkdocs-jupyter:
+  #     include: ["*.py"]
+  #     ignore: ["notebooks/.ipynb_checkpoints/*"]
+  #     include_source: true
+  #     execute: false
   - print-site:
       add_to_navigation: false
       print_page_title: 'The Parents and Baby Book'

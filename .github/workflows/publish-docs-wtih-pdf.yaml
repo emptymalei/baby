@@ -31,5 +31,10 @@ jobs:
       - run: google-chrome --version
       - run: echo $(which chrome)
       - run: sudo apt update && sudo apt install python3-cffi python3-brotli libpango-1.0-0 libpangoft2-1.0-0
-      - run: pip install -r requirements.txt
-      - run: export ENABLE_PDF_EXPORT=1 && mkdocs gh-deploy -f mkdocs.ubuntu.yml --force
+      - name: "Setup Poetry"
+        uses: abatilo/actions-poetry@v3.0.0
+        with:
+          poetry-version: 2.1.2
+      - name: Install Packages
+        run: poetry install
+      - run: export ENABLE_PDF_EXPORT=1 && poetry run mkdocs gh-deploy -f mkdocs.ubuntu.yml --force

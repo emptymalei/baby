@@ -22,13 +22,12 @@ jobs:
         with:
           python-version: "3.10.14"
       - name: Setup Poetry
-        uses: abatilo/actions-poetry@v3.0.0
+        uses: abatilo/actions-poetry@v4
         with:
-          poetry-version: 1.8.3
+          poetry-version: 2.1.2
       - name: Install dependencies
         run: |
           poetry --version
           poetry install
       - uses: nikeee/setup-pandoc@v1
-      # - run: pip install -r requirements.txt
       - run: poetry run mkdocs gh-deploy --force
