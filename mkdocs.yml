@@ -192,6 +192,7 @@ nav:
   - "New Born":
     - "Overview": new_born/index.md
     - "New Born Feeding": new_born/new_born_feeding.md
+    - "Mother's Milk": new_born/mothers_milk.md
   - "About":
     - "Roadmap": meta/roadmap.md
     - "Changelog": meta/changelog.md
