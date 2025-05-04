@@ -173,8 +173,8 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/emptymalei/baby
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/leima137/
+    # - icon: fontawesome/brands/linkedin
+    #   link: https://www.linkedin.com/in/leima137/
 
 
 
@@ -182,7 +182,16 @@ nav:
   - "Home": index.md
   - "Pregnancy":
     - "Overview": pregnancy/index.md
+    - "Midwife": pregnancy/midwife.md
     - "Pregnancy Symptoms": pregnancy/pregnancy-symptoms.md
+  - "Giving Birth":
+    - "Overview": giving_birth/index.md
+    - "Preparing for Labor": giving_birth/preparing_for_labor.md
+    - "Giving Birth in a Hospital": giving_birth/giving_birth_in_a_hospital.md
+    - "Registration of Birth": giving_birth/registration_of_birth.md
+  - "New Born":
+    - "Overview": new_born/index.md
+    - "New Born Feeding": new_born/new_born_feeding.md
   - "About":
     - "Roadmap": meta/roadmap.md
     - "Changelog": meta/changelog.md
