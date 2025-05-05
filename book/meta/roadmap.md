@@ -6,4 +6,4 @@ We treat this as a living document. As we learn more about our baby, we will upd
 
 ## Keep Our Edit History
 
-See the change history overview in [[meta/changelog|Changelog]]. The detailed change history is in the [GitHub repository](https://github.com/emptymalei/baby).
+See the change history overview in [[meta/changelog.md|Changelog]]. The detailed change history is in the [GitHub repository](https://github.com/emptymalei/baby).
