@@ -12,7 +12,7 @@ Apart from the close contact with your baby, breastfeeding of course provides [[
 
 ## Nipple Pain
 
-The hospital provided us with a lotion called [[products/hpa_lanolin_lansinoh.md|HPA Lanolin]].
+The hospital provided us with a lotion called [[products/hpa_lanolin_lansinoh|"HPA Lanolin"]].
 
 !!! info "Laser Treatment of Nipples"
 

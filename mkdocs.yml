@@ -181,20 +181,20 @@ extra:
 nav:
   - "Home": index.md
   - "Pregnancy":
-    - "Overview": pregnancy/index.md
+    - "Pregnancy Overview": pregnancy/index.md
     - "Midwife": pregnancy/midwife.md
     - "Pregnancy Symptoms": pregnancy/pregnancy-symptoms.md
   - "Giving Birth":
-    - "Overview": giving_birth/index.md
+    - "Giving Birth Overview": giving_birth/index.md
     - "Preparing for Labor": giving_birth/preparing_for_labor.md
     - "Giving Birth in a Hospital": giving_birth/giving_birth_in_a_hospital.md
     - "Registration of Birth": giving_birth/registration_of_birth.md
   - "New Born":
-    - "Overview": new_born/index.md
+    - "New Born Overview": new_born/index.md
     - "New Born Feeding": new_born/new_born_feeding.md
     - "Mother's Milk": new_born/mothers_milk.md
   - "Product Catalog":
-    - "Overview": products/index.md
+    - "Product Catalog": products/index.md
     - "HPA Lanolin": products/hpa_lanolin_lansinoh.md
   - "About":
     - "Roadmap": meta/roadmap.md

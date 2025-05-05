@@ -4,5 +4,5 @@ The pregnancy collection contains information about pregnancy, including the sta
 
 We will cover the following topics in this collection:
 
-- [[pregnancy/midwife.md|Midwife]]
-- [[pregnancy/pregnancy-symptoms.md|Some Symptoms during Pregnancy]]
+- [[pregnancy/midwife|Midwife]]
+- [[pregnancy/pregnancy-symptoms|Some Symptoms during Pregnancy]]
