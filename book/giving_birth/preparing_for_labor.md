@@ -82,17 +82,28 @@ There is no need to stress out about the hospital. Our experience with the hospi
     - [ ] Important documents
         - [ ] ID card
         - [ ] Health insurance card
-        - [ ] Maternity pass (Mutterpass)
-        - [ ] Birth plan (if you have one)
+        - [ ] Mutterpass
     - [ ] Clothes
         - [ ] Comfortable clothes for yourself
         - [ ] Clothes for the baby
+
+            !!! tip ""
+                Pack something that can allow your baby to go outside. We had to take the baby to a different location for checkups so we ==needed a hat==.
+
     - [ ] Toiletries
-        - [ ] Toothbrush and toothpaste
-        - [ ] Shampoo and conditioner
-        - [ ] Soap and body wash
-    - [ ] Snacks and drinks
+        - [ ] Toothbrush, toothpaste, mouthwash, ...
+        - [ ] Shampoo etc
+        - [ ] Bathrobe, slippers, and towel
+    - [ ] Water bottle that allows easy drinking when lying down.
+
+        !!! tip ""
+            We used this [[products/klean_kanteen_bottle|Klean Kanteen]] bottle.
+
     - [ ] Phone charger
+    - [ ] Cash!
+
+        !!! tip ""
+            For us, we needed ==cash for the birth registration== at the hospital. They didn't accept cards.
 
 
 
