@@ -87,6 +87,7 @@ There is no need to stress out about the hospital. Our experience with the hospi
     We packed the following in a suitcase. It was a correct decision because we had to move among different rooms in the hospital.
 
     - [ ] Clothes
+
         - [ ] Comfortable clothes for yourself
 
             !!! tip ""
@@ -97,6 +98,10 @@ There is no need to stress out about the hospital. Our experience with the hospi
             !!! tip ""
                 Apart from the normal clothes, pack something that can allow your baby to go outside. We had to take the baby to a different location for checkups so we ==needed a hat==.
 
+    - [ ] Bonding top
+
+        !!! tip ""
+            We used this [[products/bonding_top|Hoppediz Baby Bonding Top]].
     - [ ] Toiletries
         - [ ] Toothbrush, toothpaste, mouthwash, ...
         - [ ] Shampoo etc
