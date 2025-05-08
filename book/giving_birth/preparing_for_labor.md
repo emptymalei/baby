@@ -9,6 +9,11 @@ A few topics need to be addressed before you go into labor.
     - [ ] Create a shared calendar for the baby and add dates to the calendar so that you and your partner can manage and see the events. We use [[products/google_calendar|Google Calendar]].
     - [ ] Create a shared cloud drive folder for the baby so that you and your partner can manage and access related documents together. We use [[products/google_drive|Google Drive]].
 
+!!! info "familienportal.de also provides a checklist"
+
+    [Checklists related to birth](https://familienportal.de/familienportal/lebenslagen/schwangerschaft-geburt/checklisten)
+
+
 ## Work, leave, and parental allowance
 
 
@@ -73,22 +78,24 @@ There is no need to stress out about the hospital. Our experience with the hospi
 
     === "After Labor"
 
-        - [ ] Bring some cache with you.
+        - [ ] Birth registration.
 
 
 
 ??? info "What's in our hospital bag?"
 
-    - [ ] Important documents
-        - [ ] ID card
-        - [ ] Health insurance card
-        - [ ] Mutterpass
+    We packed the following in a suitcase. It was a correct decision because we had to move among different rooms in the hospital.
+
     - [ ] Clothes
         - [ ] Comfortable clothes for yourself
+
+            !!! tip ""
+                If you decide to breastfeed, pack some cloth that is soft and doesn't irritate your skin. See the section on [[new_born/new_born_feeding#nipple-pain|Breastfeeding>Nipple Pain]] for more information.
+
         - [ ] Clothes for the baby
 
             !!! tip ""
-                Pack something that can allow your baby to go outside. We had to take the baby to a different location for checkups so we ==needed a hat==.
+                Apart from the normal clothes, pack something that can allow your baby to go outside. We had to take the baby to a different location for checkups so we ==needed a hat==.
 
     - [ ] Toiletries
         - [ ] Toothbrush, toothpaste, mouthwash, ...
@@ -105,6 +112,12 @@ There is no need to stress out about the hospital. Our experience with the hospi
         !!! tip ""
             For us, we needed ==cash for the birth registration== at the hospital. They didn't accept cards.
 
+    We packed our documents in a separate small bag since we still needed to use them before we went to the hospital.
+
+    - [ ] Important documents
+        - [ ] ID card
+        - [ ] Health insurance card
+        - [ ] Mutterpass
 
 
 [^parental_leave_handbook_germany]: Parental Leave. Handbook Germany : Together. https://handbookgermany.de/en/parental-leave (accessed 8 May2025).

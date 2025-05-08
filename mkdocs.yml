@@ -149,6 +149,14 @@ plugins:
   #     enabled_if_env: ENABLE_PDF_EXPORT
   #     render_js: true
   #     headless_chrome_path: "google-chrome"
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      fallback_to_build_date: true
+  - git-committers:
+      enabled: true
+      repository: emptymalei/baby
+      branch: main
 
 
 

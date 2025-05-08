@@ -10,7 +10,7 @@ There are a lot of advocates for Breastfeeding in Germany. You will meet these p
 
 Apart from the close contact with your baby, breastfeeding of course provides [[new_born/mothers_milk|Mother's Milk]]. On the other hand, there are methods to extract milk from your breast and processes to help your nipples heal.
 
-## Nipple Pain
+### Nipple Pain
 
 The hospital provided us with a lotion called [[products/hpa_lanolin_lansinoh|"HPA Lanolin"]].
 
