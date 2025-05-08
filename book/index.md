@@ -7,7 +7,7 @@ hide:
 
 !!! warning "Disclaimer"
 
-    Nothing in this website should be considered medical advice. Always consult with a qualified healthcare professional for any concerns regarding your baby's health or development.
+    Nothing on this website should be considered medical advice. Always consult with a qualified healthcare professional for any concerns regarding your baby's health or development.
 
 
 This is a collection of notes and resources for parents and caregivers of babies. It includes information on baby care, development, and parenting tips.
