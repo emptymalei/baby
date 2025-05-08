@@ -1,1 +1,100 @@
 # Preparing for Labor
+
+A few topics need to be addressed before you go into labor.
+
+## General Tips
+
+!!! tip "Some General Tips"
+
+    - [ ] Create a shared calendar for the baby and add dates to the calendar so that you and your partner can manage and see the events. We use [[products/google_calendar|Google Calendar]].
+    - [ ] Create a shared cloud drive folder for the baby so that you and your partner can manage and access related documents together. We use [[products/google_drive|Google Drive]].
+
+## Work, leave, and parental allowance
+
+
+!!! tip "Checklist for Work, Leave, and Parental Allowance"
+
+    === "Before Labor"
+
+        - [ ] Inform your employer about your plans for maternity leave or parental leave.
+
+            !!! tip ""
+                Plan your parental leave with your partner. We recommend you ==check the parental allowance first before doing so==.
+
+
+    === "After Labor"
+
+        - [ ] Confirm with your employer about the details of maternity leave or parental leave.
+
+
+??? info "Elternzeit (Parental leave) in Germany"
+
+    In Germany, the parental leave can be up to 3 years but rule apply[^parental_leave_handbook_germany][^elternzeit_bmfsf]. Parents can take full hours off or do part-time work during parental leave.
+
+    See the following pages for more information:
+
+    1. Familienleistungen. BMFSFJ. https://www.bmfsfj.de/bmfsfj/themen/familie/familienleistungen (accessed 8 May2025).
+    2. Parental Leave. Handbook Germany : Together. https://handbookgermany.de/en/parental-leave (accessed 8 May2025).
+
+
+??? info "Elterngeld (Parental allowance) in Germany"
+
+    **How much do you get?**
+
+    A calculator:
+
+    Parental allowance calculator with planner. Federal family portal. https://familienportal.de/familienportal/meta/egr#/allgemeine-angaben (accessed 8 May2025).
+
+
+    **Where to apply?**
+
+    - On this webpage, you can find the office and relevant information related to your residential area: https://familienportal.de/familienportal/familienleistungen/elterngeld/faq
+        - Some of the links are not working, for example, the link to Cologne city website is wrong. For cologne, you can use the NRW website: https://www.familienportal.nrw/de/elterngeld
+    - Alternatively, there is this website: https://www.elterngeld-digital.de/ams/Elterngeld , however, Google Chrome can not translate the page automatically.
+
+
+
+## Hospital Checklist
+
+There is no need to stress out about the hospital. Our experience with the hospital ([St. Elisabeth-Krankenhaus Köln-Hohenlind](https://www.hohenlind.de/)) was very positive. The staff was very friendly and helpful. The whole process was so smooth that we didn't even need to worry about or thinking about what we need to do. The hospital staff always reminded us on the next steps. And they all speak English.
+
+!!! tip "Checklist for Hospital"
+
+    === "Before Labor"
+
+        - [ ] Contact and register with the hospital.
+
+            !!! tip ""
+                The hospital planned with us the dates and processes. Remember to write down these dates on your calendar.
+
+        - [ ] Pack your hospital bag.
+            - [ ] Find a list that is suitable for your hospital. You can find ours below this checklist.
+            - [ ] Make sure you have all your important documents sorted out and reachable. This can help you speed up the process of getting into the hospital.
+
+    === "After Labor"
+
+        - [ ] Bring some cache with you.
+
+
+
+??? info "What's in our hospital bag?"
+
+    - [ ] Important documents
+        - [ ] ID card
+        - [ ] Health insurance card
+        - [ ] Maternity pass (Mutterpass)
+        - [ ] Birth plan (if you have one)
+    - [ ] Clothes
+        - [ ] Comfortable clothes for yourself
+        - [ ] Clothes for the baby
+    - [ ] Toiletries
+        - [ ] Toothbrush and toothpaste
+        - [ ] Shampoo and conditioner
+        - [ ] Soap and body wash
+    - [ ] Snacks and drinks
+    - [ ] Phone charger
+
+
+
+[^parental_leave_handbook_germany]: Parental Leave. Handbook Germany : Together. https://handbookgermany.de/en/parental-leave (accessed 8 May2025).
+[^elternzeit_bmfsf]: Elternzeit. BMFSFJ. https://www.bmfsfj.de/bmfsfj/themen/familie/familienleistungen/elternzeit/elternzeit-73832 (accessed 8 May2025).

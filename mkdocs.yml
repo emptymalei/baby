@@ -11,7 +11,7 @@ docs_dir: "book"
 
 theme:
   name: "material"
-  # custom_dir: theme/overrides
+  custom_dir: theme/overrides
   # Don't include MkDocs' JavaScript
   include_search_page: false
   search_index_only: true
@@ -22,9 +22,12 @@ theme:
     # - navigation.instant
     - navigation.sections
     - navigation.tabs
+    - content.tooltips
+    - announce.dismiss
+    - content.tabs.link
   palette:
     - scheme: default
-      primary: black
+      primary: deep purple
       accent: deep orange
       toggle:
         icon: material/toggle-switch-off-outline
@@ -38,8 +41,8 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: assets/logo_badge.svg
-  logo: assets/logo_badge.svg
+  favicon: assets/logo/tpabb.png
+  logo: assets/logo/tpabb.png
 
 
 
@@ -61,13 +64,17 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-  - pymdownx.tasklist
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.arithmatex:
       generic: true
   - toc:
       permalink: "¶"
   - footnotes
   - pymdownx.details
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
 
 
 extra_javascript:
@@ -196,6 +203,8 @@ nav:
   - "Product Catalog":
     - "Product Catalog": products/index.md
     - "HPA Lanolin": products/hpa_lanolin_lansinoh.md
+    - "Google Calendar": products/google_calendar.md
+    - "Google Drive": products/google_drive.md
   - "About":
     - "Roadmap": meta/roadmap.md
     - "Changelog": meta/changelog.md
