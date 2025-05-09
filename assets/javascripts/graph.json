@@ -1,0 +1,398 @@
+{
+  "nodes": [
+    {
+      "id": "0",
+      "name": "Home",
+      "symbolSize": 0,
+      "value": "/"
+    },
+    {
+      "id": "1",
+      "name": "Pregnancy Overview",
+      "symbolSize": 2,
+      "value": "/pregnancy/"
+    },
+    {
+      "id": "2",
+      "name": "Midwife",
+      "symbolSize": 1,
+      "value": "/pregnancy/midwife/"
+    },
+    {
+      "id": "3",
+      "name": "Pregnancy Symptoms",
+      "symbolSize": 1,
+      "value": "/pregnancy/pregnancy-symptoms/"
+    },
+    {
+      "id": "4",
+      "name": "Giving Birth Overview",
+      "symbolSize": 3,
+      "value": "/giving_birth/"
+    },
+    {
+      "id": "5",
+      "name": "Preparing for Labor",
+      "symbolSize": 9,
+      "value": "/giving_birth/preparing_for_labor/"
+    },
+    {
+      "id": "6",
+      "name": "Giving Birth in a Hospital",
+      "symbolSize": 2,
+      "value": "/giving_birth/giving_birth_in_a_hospital/"
+    },
+    {
+      "id": "7",
+      "name": "Registration of Birth",
+      "symbolSize": 2,
+      "value": "/giving_birth/registration_of_birth/"
+    },
+    {
+      "id": "8",
+      "name": "New Born Overview",
+      "symbolSize": 0,
+      "value": "/new_born/"
+    },
+    {
+      "id": "9",
+      "name": "New Born Feeding",
+      "symbolSize": 9,
+      "value": "/new_born/new_born_feeding/"
+    },
+    {
+      "id": "10",
+      "name": "Mother's Milk",
+      "symbolSize": 1,
+      "value": "/new_born/mothers_milk/"
+    },
+    {
+      "id": "11",
+      "name": "Changing Table",
+      "symbolSize": 4,
+      "value": "/new_born/changing_table/"
+    },
+    {
+      "id": "12",
+      "name": "Evenings",
+      "symbolSize": 1,
+      "value": "/new_born/evenings/"
+    },
+    {
+      "id": "13",
+      "name": "Outdoor and Traveling",
+      "symbolSize": 1,
+      "value": "/new_born/outdoor_and_traveling/"
+    },
+    {
+      "id": "14",
+      "name": "Documents Overview",
+      "symbolSize": 0,
+      "value": "/documents/"
+    },
+    {
+      "id": "15",
+      "name": "Kinderuntersuchungsheft",
+      "symbolSize": 1,
+      "value": "/documents/kinderuntersuchungsheft/"
+    },
+    {
+      "id": "16",
+      "name": "Product Catalog",
+      "symbolSize": 0,
+      "value": "/products/"
+    },
+    {
+      "id": "17",
+      "name": "HPA Lanolin",
+      "symbolSize": 1,
+      "value": "/products/hpa_lanolin_lansinoh/"
+    },
+    {
+      "id": "18",
+      "name": "Google Calendar",
+      "symbolSize": 1,
+      "value": "/products/google_calendar/"
+    },
+    {
+      "id": "19",
+      "name": "Google Drive",
+      "symbolSize": 1,
+      "value": "/products/google_drive/"
+    },
+    {
+      "id": "20",
+      "name": "Klean Kanteen Water Bottle",
+      "symbolSize": 1,
+      "value": "/products/klean_kanteen_bottle/"
+    },
+    {
+      "id": "21",
+      "name": "Bonding Top",
+      "symbolSize": 1,
+      "value": "/products/bonding_top/"
+    },
+    {
+      "id": "22",
+      "name": "Boba Baby Wrap",
+      "symbolSize": 0,
+      "value": "/products/boba_baby_wrap/"
+    },
+    {
+      "id": "23",
+      "name": "Nobamed Pflegetuch",
+      "symbolSize": 1,
+      "value": "/products/nobamed_pflegetuch/"
+    },
+    {
+      "id": "24",
+      "name": "PoeticEHome Soft Dry Wipes",
+      "symbolSize": 1,
+      "value": "/products/poeticehome_soft_dry_wipes/"
+    },
+    {
+      "id": "25",
+      "name": "Bugaboo Fox 5",
+      "symbolSize": 1,
+      "value": "/products/bugaboo_fox_5/"
+    },
+    {
+      "id": "26",
+      "name": "Baby Daybook App",
+      "symbolSize": 1,
+      "value": "/products/baby_daybook/"
+    },
+    {
+      "id": "27",
+      "name": "Baby Brezza Formula Pro Advanced",
+      "symbolSize": 1,
+      "value": "/products/baby_brezza_formula_pro_advanced/"
+    },
+    {
+      "id": "28",
+      "name": "Baby Brezza Bottle Washer Pro",
+      "symbolSize": 2,
+      "value": "/products/baby_brezza_bottle_washer_pro/"
+    },
+    {
+      "id": "29",
+      "name": "Philips Avent Bottle",
+      "symbolSize": 1,
+      "value": "/products/philips_avent_bottle/"
+    },
+    {
+      "id": "30",
+      "name": "Medela Symphony Milk Pump",
+      "symbolSize": 1,
+      "value": "/products/medela_symphony/"
+    },
+    {
+      "id": "31",
+      "name": "Neocate Infant",
+      "symbolSize": 2,
+      "value": "/products/neocate_infant/"
+    },
+    {
+      "id": "32",
+      "name": "Vienna Breastfeeding Donut",
+      "symbolSize": 1,
+      "value": "/products/vienna_breastfeeding_donut/"
+    },
+    {
+      "id": "33",
+      "name": "Chicco Nappy Bin",
+      "symbolSize": 1,
+      "value": "/products/chicco_nappy_bin/"
+    },
+    {
+      "id": "34",
+      "name": "Ikea Standing Desk",
+      "symbolSize": 1,
+      "value": "/products/ikea_standing_desk/"
+    },
+    {
+      "id": "35",
+      "name": "Cotabaty Baby Night Light",
+      "symbolSize": 1,
+      "value": "/products/cotabaty_baby_night_light/"
+    },
+    {
+      "id": "36",
+      "name": "Ergobaby Carrier",
+      "symbolSize": 0,
+      "value": "/products/ergobaby_omni_deluxe_all-in-one/"
+    },
+    {
+      "id": "37",
+      "name": "Peak Design Tech Pouch",
+      "symbolSize": 1,
+      "value": "/products/peak_design_tech_pouch/"
+    },
+    {
+      "id": "38",
+      "name": "Stokke Tripp Trapp",
+      "symbolSize": 0,
+      "value": "/products/stokke_tripp_trapp/"
+    },
+    {
+      "id": "39",
+      "name": "St. Elisabeth-Krankenhaus K\u00f6ln-Hohenlind",
+      "symbolSize": 4,
+      "value": "/facilities/koeln_hohenlind/"
+    },
+    {
+      "id": "40",
+      "name": "Roadmap",
+      "symbolSize": 1,
+      "value": "/meta/roadmap/"
+    },
+    {
+      "id": "41",
+      "name": "Changelog",
+      "symbolSize": 1,
+      "value": "/meta/changelog/"
+    },
+    {
+      "id": "42",
+      "name": "Tags",
+      "symbolSize": 0,
+      "value": "/meta/tags/"
+    },
+    {
+      "id": "43",
+      "name": "Supplementary",
+      "symbolSize": 0,
+      "value": "/meta/supplementary/"
+    }
+  ],
+  "links": [
+    {
+      "source": "4",
+      "target": "5"
+    },
+    {
+      "source": "4",
+      "target": "6"
+    },
+    {
+      "source": "4",
+      "target": "7"
+    },
+    {
+      "source": "6",
+      "target": "39"
+    },
+    {
+      "source": "5",
+      "target": "18"
+    },
+    {
+      "source": "5",
+      "target": "19"
+    },
+    {
+      "source": "5",
+      "target": "26"
+    },
+    {
+      "source": "5",
+      "target": "25"
+    },
+    {
+      "source": "5",
+      "target": "15"
+    },
+    {
+      "source": "5",
+      "target": "9"
+    },
+    {
+      "source": "5",
+      "target": "21"
+    },
+    {
+      "source": "5",
+      "target": "20"
+    },
+    {
+      "source": "7",
+      "target": "39"
+    },
+    {
+      "source": "40",
+      "target": "41"
+    },
+    {
+      "source": "11",
+      "target": "33"
+    },
+    {
+      "source": "11",
+      "target": "27"
+    },
+    {
+      "source": "11",
+      "target": "28"
+    },
+    {
+      "source": "12",
+      "target": "35"
+    },
+    {
+      "source": "9",
+      "target": "10"
+    },
+    {
+      "source": "9",
+      "target": "17"
+    },
+    {
+      "source": "9",
+      "target": "39"
+    },
+    {
+      "source": "9",
+      "target": "32"
+    },
+    {
+      "source": "9",
+      "target": "30"
+    },
+    {
+      "source": "9",
+      "target": "29"
+    },
+    {
+      "source": "9",
+      "target": "28"
+    },
+    {
+      "source": "9",
+      "target": "31"
+    },
+    {
+      "source": "13",
+      "target": "37"
+    },
+    {
+      "source": "1",
+      "target": "2"
+    },
+    {
+      "source": "1",
+      "target": "3"
+    },
+    {
+      "source": "34",
+      "target": "11"
+    },
+    {
+      "source": "31",
+      "target": "39"
+    },
+    {
+      "source": "24",
+      "target": "23"
+    }
+  ]
+}

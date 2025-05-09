@@ -1,0 +1,3190 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Time Series with Deep Learning Quick Bite">
+      
+      
+        <meta name="author" content="Lei Ma">
+      
+      
+        <link rel="canonical" href="https://baby.leima.is/print_page/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/logo/tpabb.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>The Parents and Baby Book - The Parents and Baby Book</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings1.css">
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings2.css">
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings3.css">
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings4.css">
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings5.css">
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings6.css">
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/interactive_graph.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/obsidian_tags.css">
+    
+    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  
+        <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
+        })
+        </script>
+        </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+              </button>
+            
+            
+  Nothing on this website should be considered medical advice. Always consult with a qualified healthcare professional for any concerns regarding your baby's health or development.
+
+          </div>
+          
+            <script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="The Parents and Baby Book" class="md-header__button md-logo" aria-label="The Parents and Baby Book" data-md-component="logo">
+      
+  <img src="../assets/logo/tpabb.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The Parents and Baby Book
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The Parents and Baby Book
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/emptymalei/baby" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    emptymalei/baby
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../pregnancy/" class="md-tabs__link">
+          
+  
+  
+  Pregnancy
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../giving_birth/" class="md-tabs__link">
+          
+  
+  
+  Giving Birth
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../new_born/" class="md-tabs__link">
+          
+  
+  
+  New Born
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../documents/" class="md-tabs__link">
+          
+  
+  
+  Documents
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../products/" class="md-tabs__link">
+          
+  
+  
+  Product Catalog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../facilities/koeln_hohenlind/" class="md-tabs__link">
+          
+  
+  
+  Facilities
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../meta/roadmap/" class="md-tabs__link">
+          
+  
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="The Parents and Baby Book" class="md-nav__button md-logo" aria-label="The Parents and Baby Book" data-md-component="logo">
+      
+  <img src="../assets/logo/tpabb.png" alt="logo">
+
+    </a>
+    The Parents and Baby Book
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/emptymalei/baby" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    emptymalei/baby
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pregnancy
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Pregnancy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pregnancy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pregnancy Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pregnancy/midwife/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Midwife
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pregnancy/pregnancy-symptoms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pregnancy Symptoms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Giving Birth
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Giving Birth
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../giving_birth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Giving Birth Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../giving_birth/preparing_for_labor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Preparing for Labor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../giving_birth/giving_birth_in_a_hospital/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Giving Birth in a Hospital
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../giving_birth/registration_of_birth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Registration of Birth
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    New Born
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            New Born
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../new_born/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    New Born Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../new_born/new_born_feeding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    New Born Feeding
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../new_born/mothers_milk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mother's Milk
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../new_born/changing_table/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Changing Table
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../new_born/evenings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Evenings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../new_born/outdoor_and_traveling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Outdoor and Traveling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Documents
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Documents
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Documents Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documents/kinderuntersuchungsheft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kinderuntersuchungsheft
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Product Catalog
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Product Catalog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Product Catalog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/hpa_lanolin_lansinoh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HPA Lanolin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/google_calendar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Google Calendar
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/google_drive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Google Drive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/klean_kanteen_bottle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Klean Kanteen Water Bottle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/bonding_top/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bonding Top
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/boba_baby_wrap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Boba Baby Wrap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/nobamed_pflegetuch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Nobamed Pflegetuch
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/poeticehome_soft_dry_wipes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PoeticEHome Soft Dry Wipes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/bugaboo_fox_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bugaboo Fox 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/baby_daybook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Baby Daybook App
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/baby_brezza_formula_pro_advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Baby Brezza Formula Pro Advanced
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/baby_brezza_bottle_washer_pro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Baby Brezza Bottle Washer Pro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/philips_avent_bottle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Philips Avent Bottle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/medela_symphony/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Medela Symphony Milk Pump
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/neocate_infant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Neocate Infant
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/vienna_breastfeeding_donut/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vienna Breastfeeding Donut
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/chicco_nappy_bin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chicco Nappy Bin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/ikea_standing_desk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ikea Standing Desk
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/cotabaty_baby_night_light/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cotabaty Baby Night Light
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/ergobaby_omni_deluxe_all-in-one/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ergobaby Carrier
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/peak_design_tech_pouch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Peak Design Tech Pouch
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/stokke_tripp_trapp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Stokke Tripp Trapp
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Facilities
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Facilities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../facilities/koeln_hohenlind/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    St. Elisabeth-Krankenhaus Köln-Hohenlind
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meta/roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Roadmap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meta/changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Changelog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meta/tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tags
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meta/supplementary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Supplementary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Home
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-pregnancy" class="md-nav__link">
+    <span class="md-ellipsis">
+      I. Pregnancy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="I. Pregnancy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pregnancy" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Pregnancy Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pregnancy-midwife" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Midwife
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pregnancy-pregnancy-symptoms" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Pregnancy Symptoms
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-giving-birth" class="md-nav__link">
+    <span class="md-ellipsis">
+      II. Giving Birth
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II. Giving Birth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#giving_birth" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Giving Birth Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#giving_birth-preparing_for_labor" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Preparing for Labor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#giving_birth-giving_birth_in_a_hospital" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Giving Birth in a Hospital
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#giving_birth-registration_of_birth" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Registration of Birth
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-new-born" class="md-nav__link">
+    <span class="md-ellipsis">
+      III. New Born
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="III. New Born">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new_born" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. New Born Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new_born-new_born_feeding" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. New Born Feeding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new_born-mothers_milk" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Mother's Milk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new_born-changing_table" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Changing Table
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new_born-evenings" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Evenings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new_born-outdoor_and_traveling" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Outdoor and Traveling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      IV. Documents
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IV. Documents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Documents Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documents-kinderuntersuchungsheft" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. Kinderuntersuchungsheft
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-product-catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      V. Product Catalog
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="V. Product Catalog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#products" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Product Catalog
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-hpa_lanolin_lansinoh" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. HPA Lanolin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-google_calendar" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. Google Calendar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-google_drive" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. Google Drive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-klean_kanteen_bottle" class="md-nav__link">
+    <span class="md-ellipsis">
+      21. Klean Kanteen Water Bottle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-bonding_top" class="md-nav__link">
+    <span class="md-ellipsis">
+      22. Bonding Top
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-boba_baby_wrap" class="md-nav__link">
+    <span class="md-ellipsis">
+      23. Boba Baby Wrap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-nobamed_pflegetuch" class="md-nav__link">
+    <span class="md-ellipsis">
+      24. Nobamed Pflegetuch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-poeticehome_soft_dry_wipes" class="md-nav__link">
+    <span class="md-ellipsis">
+      25. PoeticEHome Soft Dry Wipes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-bugaboo_fox_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      26. Bugaboo Fox 5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-baby_daybook" class="md-nav__link">
+    <span class="md-ellipsis">
+      27. Baby Daybook App
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-baby_brezza_formula_pro_advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      28. Baby Brezza Formula Pro Advanced
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-baby_brezza_bottle_washer_pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      29. Baby Brezza Bottle Washer Pro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-philips_avent_bottle" class="md-nav__link">
+    <span class="md-ellipsis">
+      30. Philips Avent Bottle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-medela_symphony" class="md-nav__link">
+    <span class="md-ellipsis">
+      31. Medela Symphony Milk Pump
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-neocate_infant" class="md-nav__link">
+    <span class="md-ellipsis">
+      32. Neocate Infant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-vienna_breastfeeding_donut" class="md-nav__link">
+    <span class="md-ellipsis">
+      33. Vienna Breastfeeding Donut
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-chicco_nappy_bin" class="md-nav__link">
+    <span class="md-ellipsis">
+      34. Chicco Nappy Bin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-ikea_standing_desk" class="md-nav__link">
+    <span class="md-ellipsis">
+      35. Ikea Standing Desk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-cotabaty_baby_night_light" class="md-nav__link">
+    <span class="md-ellipsis">
+      36. Cotabaty Baby Night Light
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-ergobaby_omni_deluxe_all-in-one" class="md-nav__link">
+    <span class="md-ellipsis">
+      37. Ergobaby Carrier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-peak_design_tech_pouch" class="md-nav__link">
+    <span class="md-ellipsis">
+      38. Peak Design Tech Pouch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#products-stokke_tripp_trapp" class="md-nav__link">
+    <span class="md-ellipsis">
+      39. Stokke Tripp Trapp
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-facilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      VI. Facilities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VI. Facilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#facilities-koeln_hohenlind" class="md-nav__link">
+    <span class="md-ellipsis">
+      40. St. Elisabeth-Krankenhaus Köln-Hohenlind
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-about" class="md-nav__link">
+    <span class="md-ellipsis">
+      VII. About
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VII. About">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#meta-roadmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      41. Roadmap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meta-changelog" class="md-nav__link">
+    <span class="md-ellipsis">
+      42. Changelog
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meta-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      43. Tags
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meta-supplementary" class="md-nav__link">
+    <span class="md-ellipsis">
+      44. Supplementary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+  
+
+  
+                  
+
+
+
+<div id="print-site-page" class="print-site-enumerate-headings print-site-enumerate-figures">
+        <section class="print-page">
+            <div id="print-page-toc" data-toc-depth="6">
+                <nav role='navigation' class='print-page-toc-nav'>
+                <h1 class='print-page-toc-title'>Table of Contents</h1>
+                </nav>
+            </div>
+        </section>
+        <section class="print-page" id="index"><h1 id="index-the-parents-and-baby-book">The Parents and Baby Book<a class="headerlink" href="#index-the-parents-and-baby-book" title="Permanent link">¶</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Disclaimer</p>
+<p>Nothing on this website should be considered medical advice. Always consult with a qualified healthcare professional for any concerns regarding your baby's health or development.</p>
+</div>
+<p>This is a collection of notes and resources for parents and caregivers of babies. It includes information on baby care, development, and parenting tips.</p>
+<p>The goal is to provide food for thought and a starting point for further research, but we do our best to provide as much scientific research as possible.</p>
+<p>The information is not exhaustive and should not be taken as medical advice. Always consult with a qualified healthcare professional for any concerns regarding your baby's health or development.</p>
+<h2 id="index-we-live-in-germany">We live in Germany<a class="headerlink" href="#index-we-live-in-germany" title="Permanent link">¶</a></h2>
+<p>The fact that we are living in Germany might influence the information and point of view in this book. Many of the topics we discuss will be focus on the situation in Germany, but we will try to provide information that is relevant to a wider audience as well.</p></section>
+                        <h1 class='nav-section-title' id='section-pregnancy'>
+                            Pregnancy <a class='headerlink' href='#section-pregnancy' title='Permanent link'>↵</a>
+                        </h1>
+                        <section class="print-page" id="pregnancy"><h1 id="pregnancy-pregnancy">Pregnancy<a class="headerlink" href="#pregnancy-pregnancy" title="Permanent link">¶</a></h1>
+<p>The pregnancy collection contains information about pregnancy, including the stages of pregnancy, prenatal care, and common pregnancy symptoms.</p>
+<p>We will cover the following topics in this collection:</p>
+<ul>
+<li><a href="#pregnancy-midwife">Midwife</a></li>
+<li><a href="#pregnancy-pregnancy-symptoms">Some Symptoms during Pregnancy</a></li>
+</ul></section><section class="print-page" id="pregnancy-midwife"><h1 id="pregnancy-midwife-midwife">Midwife<a class="headerlink" href="#pregnancy-midwife-midwife" title="Permanent link">¶</a></h1>
+<p>In Germany, once you are pregnant, you need to find a midwife as soon as possible. A midwife is extremely helpful and important as he or she will accompany you throughout your pregnancy, birth, and postpartum period. In Germany, everything related to midwife is covered by your health insurance, so you do not have to pay for the midwife.</p>
+<h2 id="pregnancy-midwife-find-a-midwife">Find a midwife<a class="headerlink" href="#pregnancy-midwife-find-a-midwife" title="Permanent link">¶</a></h2>
+<p>It might be a bit difficult to find a midwife in Germany as there is a shortage of midwives. This is also why you need to start looking for a midwife as soon as you find out you are pregnant. You can search for a midwife in your area using the following resources.</p>
+<div class="admonition info">
+<p class="admonition-title">Midwife in NRW</p>
+<p>In NRW, there is a network you can use:</p>
+<p><a href="https://www.familienportal.nrw/en/schwangerschaft/gesundheit/midwife-search">Search for and find a midwife near you - FAMILIENPORTAL.NRW</a></p>
+<p>We live in Cologne and we found our English-speaking midwife using the following website:</p>
+<p><a href="https://relaunch.hebammennetzwerk-koeln.de/">Hebammen-Netzwerk Köln e.V.</a></p>
+</div></section><section class="print-page" id="pregnancy-pregnancy-symptoms"><h1 id="pregnancy-pregnancy-symptoms-pregnancy-symptoms">Pregnancy Symptoms<a class="headerlink" href="#pregnancy-pregnancy-symptoms-pregnancy-symptoms" title="Permanent link">¶</a></h1>
+<iframe src="https://app.litmaps.com/shared/86bcd3b8-7367-4935-8473-64593f3f859a"  frameborder="0" style="overflow:hidden;height:800px;width:100%" height="800px" width="100%" title="Research Papers about Pregnancy"></iframe></section><h1 class='nav-section-title-end'>Ended: Pregnancy</h1>
+                        <h1 class='nav-section-title' id='section-giving-birth'>
+                            Giving Birth <a class='headerlink' href='#section-giving-birth' title='Permanent link'>↵</a>
+                        </h1>
+                        <section class="print-page" id="giving_birth"><h1 id="giving_birth-giving-birth">Giving Birth<a class="headerlink" href="#giving_birth-giving-birth" title="Permanent link">¶</a></h1>
+<p>At some point in your pregnancy, you will need to decide where you want to give birth.</p>
+<p>We will focus on giving birth in a hospital as it was our choice.</p>
+<ul>
+<li><a href="#giving_birth-preparing_for_labor">Preparing for Labor</a></li>
+<li><a href="#giving_birth-giving_birth_in_a_hospital">Giving Birth in a Hospital</a></li>
+<li><a href="#giving_birth-registration_of_birth">Registration of Birth</a></li>
+</ul></section><section class="print-page" id="giving_birth-preparing_for_labor"><h1 id="giving_birth-preparing_for_labor-preparing-for-labor">Preparing for Labor<a class="headerlink" href="#giving_birth-preparing_for_labor-preparing-for-labor" title="Permanent link">¶</a></h1>
+<p>A few topics need to be addressed before you go into labor.</p>
+<h2 id="giving_birth-preparing_for_labor-general-tips">General Tips<a class="headerlink" href="#giving_birth-preparing_for_labor-general-tips" title="Permanent link">¶</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Some General Tips</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Create a shared calendar for the baby and add dates to the calendar so that you and your partner can manage and see the events. We use <a href="#products-google_calendar">Google Calendar</a>.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Create a shared cloud drive folder for the baby so that you and your partner can manage and access related documents together. We use <a href="#products-google_drive">Google Drive</a>.</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">familienportal.de also provides a checklist</p>
+<p><a href="https://familienportal.de/familienportal/lebenslagen/schwangerschaft-geburt/checklisten">Checklists related to birth</a></p>
+</div>
+<h2 id="giving_birth-preparing_for_labor-work-leave-and-parental-allowance">Work, leave, and parental allowance<a class="headerlink" href="#giving_birth-preparing_for_labor-work-leave-and-parental-allowance" title="Permanent link">¶</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Checklist for Work, Leave, and Parental Allowance</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="giving_birth-preparing_for_labor-__tabbed_1_1" name="giving_birth-preparing_for_labor-__tabbed_1" type="radio" /><input id="giving_birth-preparing_for_labor-__tabbed_1_2" name="giving_birth-preparing_for_labor-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="giving_birth-preparing_for_labor-__tabbed_1_1">Before Labor</label><label for="giving_birth-preparing_for_labor-__tabbed_1_2">After Labor</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Inform your employer about your plans for maternity leave or parental leave.</p>
+<div class="admonition tip">
+<p>Plan your parental leave with your partner. We recommend you <mark>check the parental allowance first before doing so</mark>.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Confirm with your employer about the details of maternity leave or parental leave.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<details class="info">
+<summary>Elternzeit (Parental leave) in Germany</summary>
+<p>In Germany, the parental leave can be up to 3 years but rule apply<sup id="fnref:parental_leave_handbook_germany"><a class="footnote-ref" href="#giving_birth-preparing_for_labor-fn:parental_leave_handbook_germany">1</a></sup><sup id="fnref:elternzeit_bmfsf"><a class="footnote-ref" href="#giving_birth-preparing_for_labor-fn:elternzeit_bmfsf">2</a></sup>. Parents can take full hours off or do part-time work during parental leave.</p>
+<p>See the following pages for more information:</p>
+<ol>
+<li>Familienleistungen. BMFSFJ. <a href="https://www.bmfsfj.de/bmfsfj/themen/familie/familienleistungen">https://www.bmfsfj.de/bmfsfj/themen/familie/familienleistungen</a> (accessed 8 May2025).</li>
+<li>Parental Leave. Handbook Germany : Together. <a href="https://handbookgermany.de/en/parental-leave">https://handbookgermany.de/en/parental-leave</a> (accessed 8 May2025).</li>
+</ol>
+</details>
+<details class="info">
+<summary>Elterngeld (Parental allowance) in Germany</summary>
+<p><strong>How much do you get?</strong></p>
+<p>A calculator:</p>
+<p>Parental allowance calculator with planner. Federal family portal. <a href="https://familienportal.de/familienportal/meta/egr#/allgemeine-angaben">https://familienportal.de/familienportal/meta/egr#/allgemeine-angaben</a> (accessed 8 May2025).</p>
+<p><strong>Where to apply?</strong></p>
+<ul>
+<li>On this webpage, you can find the office and relevant information related to your residential area: <a href="https://familienportal.de/familienportal/familienleistungen/elterngeld/faq">https://familienportal.de/familienportal/familienleistungen/elterngeld/faq</a><ul>
+<li>Some of the links are not working, for example, the link to Cologne city website is wrong. For cologne, you can use the NRW website: <a href="https://www.familienportal.nrw/de/elterngeld">https://www.familienportal.nrw/de/elterngeld</a></li>
+</ul>
+</li>
+<li>Alternatively, there is this website: <a href="https://www.elterngeld-digital.de/ams/Elterngeld">https://www.elterngeld-digital.de/ams/Elterngeld</a> , however, Google Chrome can not translate the page automatically.</li>
+</ul>
+</details>
+<h2 id="giving_birth-preparing_for_labor-hospital-checklist">Hospital Checklist<a class="headerlink" href="#giving_birth-preparing_for_labor-hospital-checklist" title="Permanent link">¶</a></h2>
+<p>There is no need to stress out about the hospital. Our experience with the hospital (<a href="https://www.hohenlind.de/">St. Elisabeth-Krankenhaus Köln-Hohenlind</a>) was very positive. The staff was very friendly and helpful. The whole process was so smooth that we didn't even need to worry about or thinking about what we need to do. The hospital staff always reminded us on the next steps. And they all speak English.</p>
+<div class="admonition tip">
+<p class="admonition-title">Checklist for Hospital</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="giving_birth-preparing_for_labor-__tabbed_2_1" name="giving_birth-preparing_for_labor-__tabbed_2" type="radio" /><input id="giving_birth-preparing_for_labor-__tabbed_2_2" name="giving_birth-preparing_for_labor-__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="giving_birth-preparing_for_labor-__tabbed_2_1">Before Labor</label><label for="giving_birth-preparing_for_labor-__tabbed_2_2">After Labor</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Contact and register with the hospital.</p>
+<div class="admonition tip">
+<p>The hospital planned with us the dates and processes. Remember to write down these dates on your calendar.</p>
+</div>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Pack your hospital bag.</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Find a list that is suitable for your hospital. You can find ours below this checklist.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Make sure you have all your important documents sorted out and reachable. This can help you speed up the process of getting into the hospital.</li>
+</ul>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Find your way of keep track of baby activities. It can be pen and paper, or an app. Because you will need to track the feeding and diaper changes of your baby while in the hospital.</p>
+<div class="admonition tip">
+<p>We use the <a href="#products-baby_daybook">Baby Daybook</a> app.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Birth registration.</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Baby car seat.</p>
+<div class="admonition tip">
+<p>We used the <a href="#products-bugaboo_fox_5">Bugaboo Fox 5 Kinderwagen 3 in 1 Set</a>. It has a car seat that is very well designed.</p>
+</div>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Remember to take the <a href="#documents-kinderuntersuchungsheft">Kinderuntersuchungsheft</a> from the hospital.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<details class="info">
+<summary>What's in our hospital bag?</summary>
+<p>We packed the following in a suitcase. It was a correct decision because we had to move among different rooms in the hospital.</p>
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Clothes</p>
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Comfortable clothes for yourself</p>
+<div class="admonition tip">
+<p>If you decide to breastfeed, pack some cloth that is soft and doesn't irritate your skin. See the section on <a href="#new_born-new_born_feeding-nipple-pain">Breastfeeding&gt;Nipple Pain</a> for more information.</p>
+</div>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Clothes for the baby</p>
+<div class="admonition tip">
+<p>Apart from the normal clothes, pack something that can allow your baby to go outside. We had to take the baby to a different location for checkups so we <mark>needed a hat</mark>.</p>
+</div>
+</li>
+</ul>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Bonding top</p>
+<div class="admonition tip">
+<p>We used this <a href="#products-bonding_top">Hoppediz Baby Bonding Top</a>.</p>
+</div>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Toiletries</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Toothbrush, toothpaste, mouthwash, ...</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Shampoo etc</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Bathrobe, slippers, and towel</li>
+</ul>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Water bottle that allows easy drinking when lying down.</p>
+<div class="admonition tip">
+<p>We used this <a href="#products-klean_kanteen_bottle">Klean Kanteen</a> bottle.</p>
+</div>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Phone charger</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cash!</p>
+<div class="admonition tip">
+<p>For us, we needed <mark>cash for the birth registration</mark> at the hospital. They didn't accept cards.</p>
+</div>
+</li>
+</ul>
+<p>We packed our documents in a separate small bag since we still needed to use them before we went to the hospital.</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Important documents<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ID card</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Health insurance card</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Mutterpass</li>
+</ul>
+</li>
+</ul>
+</details>
+<div class="footnote">
+<hr />
+<ol>
+<li id="giving_birth-preparing_for_labor-fn:parental_leave_handbook_germany">
+<p>Parental Leave. Handbook Germany : Together. <a href="https://handbookgermany.de/en/parental-leave">https://handbookgermany.de/en/parental-leave</a> (accessed 8 May2025).&#160;<a class="footnote-backref" href="#giving_birth-preparing_for_labor-fnref:parental_leave_handbook_germany" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="giving_birth-preparing_for_labor-fn:elternzeit_bmfsf">
+<p>Elternzeit. BMFSFJ. <a href="https://www.bmfsfj.de/bmfsfj/themen/familie/familienleistungen/elternzeit/elternzeit-73832">https://www.bmfsfj.de/bmfsfj/themen/familie/familienleistungen/elternzeit/elternzeit-73832</a> (accessed 8 May2025).&#160;<a class="footnote-backref" href="#giving_birth-preparing_for_labor-fnref:elternzeit_bmfsf" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></section><section class="print-page" id="giving_birth-giving_birth_in_a_hospital"><h1 id="giving_birth-giving_birth_in_a_hospital-giving-birth-in-a-hospital">Giving Birth in a Hospital<a class="headerlink" href="#giving_birth-giving_birth_in_a_hospital-giving-birth-in-a-hospital" title="Permanent link">¶</a></h1>
+<h2 id="giving_birth-giving_birth_in_a_hospital-call-an-ambulance">Call an Ambulance<a class="headerlink" href="#giving_birth-giving_birth_in_a_hospital-call-an-ambulance" title="Permanent link">¶</a></h2>
+<p>Confirm with your gynecologist or midwife to see if and when you need to call an ambulance.</p>
+<h2 id="giving_birth-giving_birth_in_a_hospital-family-room">Family Room<a class="headerlink" href="#giving_birth-giving_birth_in_a_hospital-family-room" title="Permanent link">¶</a></h2>
+<p>Ask for a family room. Some hospitals can even convert normal rooms into family rooms (<a href="#facilities-koeln_hohenlind">St. Elisabeth-Krankenhaus Köln-Hohenlind</a> did this for us.).</p>
+<h2 id="giving_birth-giving_birth_in_a_hospital-discharge">Discharge<a class="headerlink" href="#giving_birth-giving_birth_in_a_hospital-discharge" title="Permanent link">¶</a></h2>
+<p>Hospitals in Germany usually discharge mothers and babies in a few days.</p></section><section class="print-page" id="giving_birth-registration_of_birth"><h1 id="giving_birth-registration_of_birth-birth-registration">Birth Registration<a class="headerlink" href="#giving_birth-registration_of_birth-birth-registration" title="Permanent link">¶</a></h1>
+<p>Birth registration is simple if the baby is born in a hospital. For our case, <a href="#facilities-koeln_hohenlind">St. Elisabeth-Krankenhaus Köln-Hohenlind</a> has a counter in the hospital where you can register the birth.</p>
+<p>Follow the following website for the latest information on the required documents:</p>
+<p>Anmeldung Ihres Kindes beim Standesamt. Familienportal des Bundes. <a href="https://familienportal.de/familienportal/lebenslagen/schwangerschaft-geburt/anmeldung-standesamt">https://familienportal.de/familienportal/lebenslagen/schwangerschaft-geburt/anmeldung-standesamt</a> (accessed 8 May2025).</p></section><h1 class='nav-section-title-end'>Ended: Giving Birth</h1>
+                        <h1 class='nav-section-title' id='section-new-born'>
+                            New Born <a class='headerlink' href='#section-new-born' title='Permanent link'>↵</a>
+                        </h1>
+                        <section class="print-page" id="new_born"><h1 id="new_born-new-born">New Born<a class="headerlink" href="#new_born-new-born" title="Permanent link">¶</a></h1>
+<p>It was quite confusing the first time I interacted with our new born.</p>
+<p>We will discuss a few topics here:</p>
+<ul>
+<li><a href="#new_born-new_born_feeding">Feeding a New Born</a></li>
+<li><a href="#new_born-mothers_milk">Mother's Milk</a></li>
+<li><a href="#new_born-changing_table">Changing Table Setup</a></li>
+</ul></section><section class="print-page" id="new_born-new_born_feeding"><h1 id="new_born-new_born_feeding-feeding-a-new-born">Feeding a New Born<a class="headerlink" href="#new_born-new_born_feeding-feeding-a-new-born" title="Permanent link">¶</a></h1>
+<h2 id="new_born-new_born_feeding-breastfeeding">Breastfeeding<a class="headerlink" href="#new_born-new_born_feeding-breastfeeding" title="Permanent link">¶</a></h2>
+<p>There are a lot of advocates for Breastfeeding in Germany. You will meet these people at every stage of your pregnancy and after the birth of your child.</p>
+<div class="admonition note">
+<p class="admonition-title">Communication and Support</p>
+<p>Some of these advocates will push very hard and make you uncomfortable even suffer. However, most of time, they will offer you help by providing alternatives or different techniques to make it easier for you. Please remember to communicate clearly with them.</p>
+</div>
+<p>Apart from the close contact with your baby, breastfeeding of course provides <a href="#new_born-mothers_milk">Mother's Milk</a>. On the other hand, there are methods to extract milk from your breast and processes to help your nipples heal.</p>
+<h3 id="new_born-new_born_feeding-nipple-pain">Nipple Pain<a class="headerlink" href="#new_born-new_born_feeding-nipple-pain" title="Permanent link">¶</a></h3>
+<p>The hospital provided us with a lotion called <a href="#products-hpa_lanolin_lansinoh">"HPA Lanolin"</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">Laser Treatment of Nipples</p>
+<p>In some hospitals, for example, <a href="#facilities-koeln_hohenlind">St. Elisabeth-Krankenhaus Köln-Hohenlind</a> in Cologne, offer laser treatment for your nipples. This is a very good option if you have sore or cracked nipples.</p>
+<p>If you are interested in the technical details of the laser treatment, you can read about it in the following article <sup id="fnref:1"><a class="footnote-ref" href="#new_born-new_born_feeding-fn:1">1</a></sup> <sup id="fnref:2"><a class="footnote-ref" href="#new_born-new_born_feeding-fn:2">2</a></sup>,</p>
+<ol>
+<li><a href="http://dx.doi.org/10.1016/j.pmn.2016.05.003">K. P. Coca, K. O. Marcacine, M. A. Gamba, L. Corrêa, A. C. C. Aranha, and A. C. F. de V. Abrão, “Efficacy of low-level laser therapy in relieving nipple pain in breastfeeding women: A triple-blind, randomized, controlled trial,” Pain Manag. Nurs., vol. 17, no. 4, pp. 281–289, Aug. 2016, doi: 10.1016/j.pmn.2016.05.003. Available: http://dx.doi.org/10.1016/j.pmn.2016.05.003. [Accessed: May 04, 2025]</a></li>
+<li><a href="https://doi.org/10.1007/s10439-011-0454-7">H. Chung, T. Dai, S. K. Sharma, Y.-Y. Huang, J. D. Carroll, and M. R. Hamblin, “The nuts and bolts of low-level laser (light) therapy,” Ann. Biomed. Eng., vol. 40, no. 2, pp. 516–533, Feb. 2012, doi: 10.1007/s10439-011-0454-7. Available: https://doi.org/10.1007/s10439-011-0454-7</a>.</li>
+</ol>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Choose a Good Fabric for Your Clothes/Pajamas</p>
+<p>Sometimes the <a href="#products-vienna_breastfeeding_donut">Vienna breastfeeding donut</a> doesn't help and made the nipple pain worse.</p>
+<p>But we found some clothes made from some specific fabrics are comfortable for the nipples:</p>
+<ul>
+<li>Modal textiles.</li>
+</ul>
+<p>The following are fabrics that we found is causes irritation to the nipples:</p>
+<ul>
+<li>Cotton.</li>
+</ul>
+</div>
+<h2 id="new_born-new_born_feeding-milk-extraction">Milk Extraction<a class="headerlink" href="#new_born-new_born_feeding-milk-extraction" title="Permanent link">¶</a></h2>
+<p>In Germany, you can get a prescription for a breast pump and the insurance will pay for it.</p>
+<p>The one we got from the prescription was the <a href="#products-medela_symphony">Medela Symphony Milk Pump</a>.</p>
+<h2 id="new_born-new_born_feeding-bottle-feeding">Bottle Feeding<a class="headerlink" href="#new_born-new_born_feeding-bottle-feeding" title="Permanent link">¶</a></h2>
+<p>We use the <a href="#products-philips_avent_bottle">Philips Avent Bottle</a> for bottle feeding.</p>
+<p>Washing bottles is a pain. Luckily <a href="#products-baby_brezza_bottle_washer_pro">Baby Brezza Bottle Washer Pro</a> saved us a lot of time and effort.</p>
+<h2 id="new_born-new_born_feeding-formula-milk">Formula Milk<a class="headerlink" href="#new_born-new_born_feeding-formula-milk" title="Permanent link">¶</a></h2>
+<p>We also use formula milk. We have tried the following brands:</p>
+<ul>
+<li><a href="https://www.aptaclub.de/">Aptamil</a></li>
+<li><a href="https://www.hipp.de/">Hipp</a></li>
+<li><a href="https://www.neocate.de/">Neocate</a></li>
+</ul>
+<p>All are fine. We decided to go with the <a href="#products-neocate_infant">Neocate Infant</a> because our hospital provided it and our baby liked it. Personally, we don't feel any difference between the three brands.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="new_born-new_born_feeding-fn:1">
+<p>Cirico MOV, Shimoda GT, Silva IA, Sousa MVP de, Castro R de, McArthur A. Effectiveness of photobiomodulation therapy for nipple pain or nipple trauma in lactating women: A systematic review protocol. <em>International Journal of Evidence-based Healthcare</em> 2021. doi:<a href="https://doi.org/10.11124/jbisrir-d-19-00371">10.11124/jbisrir-d-19-00371</a>.&#160;<a class="footnote-backref" href="#new_born-new_born_feeding-fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="new_born-new_born_feeding-fn:2">
+<p>Chung H, Dai T, Sharma SK, Huang Y-Y, Carroll JD, Hamblin MR. The nuts and bolts of low-level laser (light) therapy. <em>Annals of Biomedical Engineering</em> 2012. doi:<a href="https://doi.org/10.1007/s10439-011-0454-7">10.1007/s10439-011-0454-7</a>.&#160;<a class="footnote-backref" href="#new_born-new_born_feeding-fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></section><section class="print-page" id="new_born-mothers_milk"><h1 id="new_born-mothers_milk-mothers-milk">Mother's Milk<a class="headerlink" href="#new_born-mothers_milk-mothers-milk" title="Permanent link">¶</a></h1>
+<h2 id="new_born-mothers_milk-storing-mothers-milk">Storing Mother's Milk<a class="headerlink" href="#new_born-mothers_milk-storing-mothers-milk" title="Permanent link">¶</a></h2>
+<p>At room temperature (~ 25°C), up to 4 hours<sup id="fnref:cdc_breast_milk"><a class="footnote-ref" href="#new_born-mothers_milk-fn:cdc_breast_milk">1</a></sup><sup id="fnref:nhs_breast_milk"><a class="footnote-ref" href="#new_born-mothers_milk-fn:nhs_breast_milk">2</a></sup>. CDC provides a nice info-graphic for storing breast milk<sup id="fnref:cdc_storage_info"><a class="footnote-ref" href="#new_born-mothers_milk-fn:cdc_storage_info">3</a></sup>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" href="../new_born/assets/Breastmilk-ECE-082022-508_2-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="storing fresh" src="../new_born/assets/Breastmilk-ECE-082022-508_2-1.png" /></a></td>
+<td><a class="glightbox" href="../new_born/assets/Breastmilk-ECE-082022-508_2-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="storing used" src="../new_born/assets/Breastmilk-ECE-082022-508_2-2.png" /></a></td>
+</tr>
+</tbody>
+</table>
+<div class="footnote">
+<hr />
+<ol>
+<li id="new_born-mothers_milk-fn:cdc_breast_milk">
+<p>CDC. Breast Milk Storage and Preparation. Breastfeeding. 2024.<a href="https://www.cdc.gov/breastfeeding/breast-milk-preparation-and-storage/handling-breastmilk.html#:~:text=Freshly%20expressed%20or%20pumped%20milk,to%2012%20months%20is%20acceptable">https://www.cdc.gov/breastfeeding/breast-milk-preparation-and-storage/handling-breastmilk.html#:~:text=Freshly%20expressed%20or%20pumped%20milk,to%2012%20months%20is%20acceptable</a>. (accessed 9 May2025).&#160;<a class="footnote-backref" href="#new_born-mothers_milk-fnref:cdc_breast_milk" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="new_born-mothers_milk-fn:nhs_breast_milk">
+<p>Expressing and storing breast milk. nhs.uk. <a href="https://www.nhs.uk/baby/breastfeeding-and-bottle-feeding/breastfeeding/expressing-breast-milk/">https://www.nhs.uk/baby/breastfeeding-and-bottle-feeding/breastfeeding/expressing-breast-milk/</a> (accessed 9 May2025).&#160;<a class="footnote-backref" href="#new_born-mothers_milk-fnref:nhs_breast_milk" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="new_born-mothers_milk-fn:cdc_storage_info">
+<p>Centers for Disease Control and Prevention. Storage, Handling, and Preparation of Breast Milk in Early Care and Education (ECE) Programs. <a href="https://www.cdc.gov/obesity/strategies/early-care-education/pdf/Breastmilk-ECE-082022-508.pdf">https://www.cdc.gov/obesity/strategies/early-care-education/pdf/Breastmilk-ECE-082022-508.pdf</a> (accessed 9 May2025).&#160;<a class="footnote-backref" href="#new_born-mothers_milk-fnref:cdc_storage_info" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></section><section class="print-page" id="new_born-changing_table"><h1 id="new_born-changing_table-changing-table">Changing Table<a class="headerlink" href="#new_born-changing_table-changing-table" title="Permanent link">¶</a></h1>
+<p>We converted a standing desk to a changing table. The idea is that we can adjust to our individual height so that we don't have to bend down too much. This is especially important for the back, as you will be changing diapers many times a day.</p>
+<p>The following is our current setup (as of 2025-05-09):</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="new_born-changing_table-__tabbed_1_1" name="new_born-changing_table-__tabbed_1" type="radio" /><input id="new_born-changing_table-__tabbed_1_2" name="new_born-changing_table-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="new_born-changing_table-__tabbed_1_1">Annotated Changing Table</label><label for="new_born-changing_table-__tabbed_1_2">Original Changing Table Photo</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a class="glightbox" href="../new_born/assets/changing_table_setup_annotated.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Changing Table" src="../new_born/assets/changing_table_setup_annotated.png" /></a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../new_born/assets/changing_table_setup.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Changing Table" src="../new_born/assets/changing_table_setup.png" /></a></p>
+</div>
+</div>
+</div>
+<h2 id="new_born-changing_table-nappy-bin">Nappy Bin<a class="headerlink" href="#new_born-changing_table-nappy-bin" title="Permanent link">¶</a></h2>
+<p>We use this <a href="#products-chicco_nappy_bin">Chicco nappy bin</a> for nappy disposal.</p>
+<h2 id="new_born-changing_table-formula-machine">Formula Machine<a class="headerlink" href="#new_born-changing_table-formula-machine" title="Permanent link">¶</a></h2>
+<p>We use the <a href="#products-baby_brezza_formula_pro_advanced">Baby Brezza Formula Pro Advanced</a> to prepare formula milk.</p>
+<h2 id="new_born-changing_table-bottle-washer">Bottle Washer<a class="headerlink" href="#new_born-changing_table-bottle-washer" title="Permanent link">¶</a></h2>
+<p>We use the <a href="#products-baby_brezza_bottle_washer_pro">Baby Brezza Bottle Washer Pro</a> to wash bottles.</p>
+<div class="admonition tip">
+<p class="admonition-title">Where do we put it</p>
+<p>We have to put it in the kitchen due to limited space. Also we don't want to have any leakage on the parquet floor.</p>
+</div>
+<p><a class="glightbox" href="../new_born/assets/baby_brezza_washing_setup.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Baby Brezza Bottle Washer Pro in Kitchen" src="../new_born/assets/baby_brezza_washing_setup.png" /></a></p></section><section class="print-page" id="new_born-evenings"><h1 id="new_born-evenings-evenings">Evenings<a class="headerlink" href="#new_born-evenings-evenings" title="Permanent link">¶</a></h1>
+<h2 id="new_born-evenings-lights">Lights<a class="headerlink" href="#new_born-evenings-lights" title="Permanent link">¶</a></h2>
+<p>We realized that our lights might be a bit too bright for the baby. So we dimmed all our ceiling lights and changed other lamps to warm or reddish color.</p>
+<p>We use this <a href="#products-cotabaty_baby_night_light">Cotabaty Baby Night Light</a> to check the baby during the night.</p></section><section class="print-page" id="new_born-outdoor_and_traveling"><h1 id="new_born-outdoor_and_traveling-outdoor-and-traveling">Outdoor and Traveling<a class="headerlink" href="#new_born-outdoor_and_traveling-outdoor-and-traveling" title="Permanent link">¶</a></h1>
+<h2 id="new_born-outdoor_and_traveling-bags">Bags<a class="headerlink" href="#new_born-outdoor_and_traveling-bags" title="Permanent link">¶</a></h2>
+<p>We use a <a href="#products-peak_design_tech_pouch">Peak Design Tech Pouch</a> to store baby stuff like milk bottle, diapers, wipes, etc.</p></section><h1 class='nav-section-title-end'>Ended: New Born</h1>
+                        <h1 class='nav-section-title' id='section-documents'>
+                            Documents <a class='headerlink' href='#section-documents' title='Permanent link'>↵</a>
+                        </h1>
+                        <section class="print-page" id="documents"><h1 id="documents-documents">Documents<a class="headerlink" href="#documents-documents" title="Permanent link">¶</a></h1></section><section class="print-page" id="documents-kinderuntersuchungsheft"><h1 id="documents-kinderuntersuchungsheft-kinderuntersuchungsheft">Kinderuntersuchungsheft<a class="headerlink" href="#documents-kinderuntersuchungsheft-kinderuntersuchungsheft" title="Permanent link">¶</a></h1>
+<p>Also called <a href="https://www.kindergesundheit-info.de/themen/frueherkennung-u1-u9-und-j1/das-gelbe-heft/">the "yellow booklet"</a> <sup id="fnref:kindergesundheit_yellow"><a class="footnote-ref" href="#documents-kinderuntersuchungsheft-fn:kindergesundheit_yellow">1</a></sup>.</p>
+<p>Charite has <a href="../documents/assets/2023-05-12_G-BA_Kinderuntersuchungsheft_WEB_ENG_WZ.pdf">an English version</a> of it<sup id="fnref:charite_yellow_book_en"><a class="footnote-ref" href="#documents-kinderuntersuchungsheft-fn:charite_yellow_book_en">2</a></sup>.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="documents-kinderuntersuchungsheft-fn:kindergesundheit_yellow">
+<p>Das Gelbe Heft. kindergesundheit-info.de. <a href="https://www.kindergesundheit-info.de/themen/frueherkennung-u1-u9-und-j1/das-gelbe-heft/">https://www.kindergesundheit-info.de/themen/frueherkennung-u1-u9-und-j1/das-gelbe-heft/</a> (accessed 9 May2025).&#160;<a class="footnote-backref" href="#documents-kinderuntersuchungsheft-fnref:kindergesundheit_yellow" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="documents-kinderuntersuchungsheft-fn:charite_yellow_book_en">
+<p>Meldung-Detail: Charité – Universitätsmedizin Berlin. Einladungs- und Rückmeldewesen zu den Kindervorsorgeuntersuchungen - Charité – Universitätsmedizin Berlin. <a href="https://kindervorsorge.charite.de/metas/meldung/artikel/detail/das_neue_kinderuntersuchungsheft_praktische_fragen_und_antworten">https://kindervorsorge.charite.de/metas/meldung/artikel/detail/das_neue_kinderuntersuchungsheft_praktische_fragen_und_antworten</a> (accessed 9 May2025).&#160;<a class="footnote-backref" href="#documents-kinderuntersuchungsheft-fnref:charite_yellow_book_en" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></section><h1 class='nav-section-title-end'>Ended: Documents</h1>
+                        <h1 class='nav-section-title' id='section-product-catalog'>
+                            Product Catalog <a class='headerlink' href='#section-product-catalog' title='Permanent link'>↵</a>
+                        </h1>
+                        <section class="print-page" id="products"><h1 id="products-catalog-of-products">Catalog of Products<a class="headerlink" href="#products-catalog-of-products" title="Permanent link">¶</a></h1>
+<p>We record our experiences of using different products in this section.</p>
+<p>If you have different experiences, please let us know. We will be happy to add your experiences to this section.</p></section><section class="print-page" id="products-hpa_lanolin_lansinoh"><h1 id="products-hpa_lanolin_lansinoh-hpa-lanolin-from-lansinoh">HPA Lanolin from Lansinoh<a class="headerlink" href="#products-hpa_lanolin_lansinoh-hpa-lanolin-from-lansinoh" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 3c3.88 0 7 3.14 7 7 0 2.8-1.63 5.19-4 6.31V21H9v-3H8c-1.11 0-2-.89-2-2v-3H4.5c-.42 0-.66-.5-.42-.81L6 9.66A7.003 7.003 0 0 1 13 3m-2.68 4.39h1.93c.01-.3.1-.53.28-.69a1 1 0 0 1 .66-.23c.31 0 .57.1.75.28.18.19.26.45.26.75 0 .32-.07.59-.23.82-.14.23-.35.43-.61.59-.51.34-.86.64-1.05.91-.2.26-.31.68-.31 1.18h2c0-.31.04-.56.13-.74.09-.19.26-.36.51-.52.45-.24.82-.53 1.11-.93s.44-.81.44-1.31c0-.76-.27-1.37-.81-1.82-.53-.45-1.26-.68-2.19-.68-.87 0-1.57.2-2.11.59-.52.41-.78.98-.77 1.77zM12 14h2v-2h-2zm1-13C8.41 1 4.61 4.42 4.06 8.9L2.5 11h-.03l-.02.03c-.55.76-.62 1.76-.19 2.59.36.69 1 1.17 1.74 1.32V16c0 1.85 1.28 3.42 3 3.87V23h11v-5.5c2.5-1.67 4-4.44 4-7.5 0-4.97-4.04-9-9-9"/></svg></span></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://lansinoh.de/products/hpa-lanolin?srsltid=AfmBOoruj53TdE1D1D8IBgHqYkguVY0hFw0eQMzybMJp9qANYvOrd74W&amp;variant=52264221507916">"HPA Lanolin"</a> is a product that the hospital provided us with to help with sore or cracked nipples.</p>
+<p>Our experience is that it is useful.</p></section><section class="print-page" id="products-google_calendar"><h1 id="products-google_calendar-google-calendar">Google Calendar<a class="headerlink" href="#products-google_calendar-google-calendar" title="Permanent link">¶</a></h1>
+<p>We created a shared calendar on Google Calendar for the baby. Whenever there is something planned, we put it on the calendar, including the address if we need to visit somewhere.</p></section><section class="print-page" id="products-google_drive"><h1 id="products-google_drive-google-drive">Google Drive<a class="headerlink" href="#products-google_drive-google-drive" title="Permanent link">¶</a></h1>
+<p>We created a shared folder on Google Drive for the baby. We organize all the documents related to the baby in this folder. If there is a need, either of us can access the folder and find the documents.</p></section><section class="print-page" id="products-klean_kanteen_bottle"><h1 id="products-klean_kanteen_bottle-klean-kanteen-water-bottle">Klean Kanteen Water Bottle<a class="headerlink" href="#products-klean_kanteen_bottle-klean-kanteen-water-bottle" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+<td><a href="https://amzn.eu/d/7AYtCZK">Amazon</a></td>
+</tr>
+</tbody>
+</table>
+<p>On <a href="https://amzn.eu/d/7AYtCZK">Amazon.de</a>:</p>
+<p><a class="glightbox" href="../products/assets/klean_kanteen_water_bottle.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Klean Kanteen Water Bottle" src="../products/assets/klean_kanteen_water_bottle.png" /></a></p>
+<p>It was one of the most useful items in our hospital bag. One can drink from it while lying down. We used it even after we were discharged from the hospital.</p></section><section class="print-page" id="products-bonding_top"><h1 id="products-bonding_top-bonding-top">Bonding Top<a class="headerlink" href="#products-bonding_top-bonding-top" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+<td><a href="https://amzn.eu/d/1Xr5aN1">Amazon</a></td>
+</tr>
+</tbody>
+</table>
+<p>Bonding top was one of the most useful items in our hospital bag. The hospital we visited also provides bonding tops.</p>
+<p>We bought this <a href="https://amzn.eu/d/1Xr5aN1">Hoppediz Baby Bonding Top for Birth, Sectio and Postpartum, Organic Quality, Sage M</a> from Amazon.</p>
+<p><a class="glightbox" href="../products/assets/hoppediz_bonding_top.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Hoppediz Baby Bonding Top" src="../products/assets/hoppediz_bonding_top.png" /></a></p></section><section class="print-page" id="products-boba_baby_wrap"><h1 id="products-boba_baby_wrap-boba-baby-wrap">Boba Baby Wrap<a class="headerlink" href="#products-boba_baby_wrap-boba-baby-wrap" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+<td><a href="https://amzn.eu/d/9vUQgrc">Amazon</a></td>
+</tr>
+</tbody>
+</table>
+<p><a class="glightbox" href="../products/assets/boba_baby_wrap.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Boba Baby Wrap" src="../products/assets/boba_baby_wrap.png" /></a></p>
+<p>We got it on <a href="https://amzn.eu/d/9vUQgrc">Amazon</a>.</p></section><section class="print-page" id="products-nobamed_pflegetuch"><h1 id="products-nobamed_pflegetuch-nobamed-pflegetuch">Nobamed Pflegetuch<a class="headerlink" href="#products-nobamed_pflegetuch-nobamed-pflegetuch" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+<td><a href="https://www.nobamed.com/de/pflegeartikel/378-4342-pflegetuch.html#/1906-massepflegetuch-32_cm_x_34_cm/3140-vpe_pflegetuch-50_stuck">nobamed website</a></td>
+</tr>
+</tbody>
+</table>
+<p>The hospital that admitted us uses wipes from nobamed to clean the diaper area of our baby. We found it easy to use in the hospital so we purchased some for home use.</p>
+<p>We purchased them directly from the <a href="https://www.nobamed.com/de/pflegeartikel/378-4342-pflegetuch.html#/1906-massepflegetuch-32_cm_x_34_cm/3140-vpe_pflegetuch-50_stuck">nobamed website</a>.</p>
+<p><a class="glightbox" href="../products/assets/nobamed_pflegetuch.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Nobamed Pflegetuch" src="../products/assets/nobamed_pflegetuch.png" /></a></p></section><section class="print-page" id="products-poeticehome_soft_dry_wipes"><h1 id="products-poeticehome_soft_dry_wipes-poeticehome-soft-dry-wipes">PoeticEHome Soft Dry Wipes<a class="headerlink" href="#products-poeticehome_soft_dry_wipes-poeticehome-soft-dry-wipes" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+<td><a href="https://amzn.eu/d/4qnNqsB">Amazon</a></td>
+</tr>
+</tbody>
+</table>
+<p>We use <a href="https://amzn.eu/d/4qnNqsB">PoeticEHome Soft Dry Wipes</a> to clean the diaper area of our baby. It is handy and soft. We find that <a href="#products-nobamed_pflegetuch">Nobamed Pflegetuch</a> is a bit rougher and sometimes too large.</p>
+<p><a class="glightbox" href="../products/assets/poeticehome_soft_dry_wipes.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PoeticEHome Soft Dry Wipes" src="../products/assets/poeticehome_soft_dry_wipes.png" /></a></p></section><section class="print-page" id="products-bugaboo_fox_5"><h1 id="products-bugaboo_fox_5-bugaboo-fox-5-kinderwagen-3-in-1-set">Bugaboo Fox 5 Kinderwagen 3 in 1 Set<a class="headerlink" href="#products-bugaboo_fox_5-bugaboo-fox-5-kinderwagen-3-in-1-set" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+<td><a href="https://www.bugaboo.com/de-de/kinderwagen-sets/fox-5/bugaboo-fox-5-kinderwagen-3-in-1-set-BP10020.html">official website</a></td>
+</tr>
+</tbody>
+</table>
+<p>We use the Bugaboo Fox 5 series. It has a stroller set and a car seat.</p>
+<p><a class="glightbox" href="../products/assets/bugaboo_fox_5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Bugaboo Fox 5" src="../products/assets/bugaboo_fox_5.png" /></a></p>
+<p>We purchased it at their <a href="https://www.bugaboo.com/de-de/kinderwagen-sets/fox-5/bugaboo-fox-5-kinderwagen-3-in-1-set-BP10020.html">official website</a>.</p>
+<p>Their car seat has a lot of padding and a shade to protect the baby from the sun. We really love it.</p>
+<p>The stroller is also very flexible. It has large wheels so the bobbing is reduced on uneven surfaces.</p></section><section class="print-page" id="products-baby_daybook"><h1 id="products-baby_daybook-baby-daybook-app">Baby Daybook App<a class="headerlink" href="#products-baby_daybook-baby-daybook-app" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+<td><a href="https://babydaybook.app/">Baby Daybook</a></td>
+</tr>
+</tbody>
+</table>
+<p>We are using the <a href="https://babydaybook.app/">Baby Daybook</a> app to track our baby's development. So far we really enjoy it.</p>
+<p>We use it to track almost all activities of our baby. In the beginning, we thought it would be too much work, however, the app is very easy to use and we find it extremely helpful to keep track of things such as when we need to feed the baby again.</p>
+<p>We purchased the premium version of the app because we use it a lot.</p></section><section class="print-page" id="products-baby_brezza_formula_pro_advanced"><h1 id="products-baby_brezza_formula_pro_advanced-baby-brezza-formula-pro-advanced">Baby Brezza Formula Pro Advanced<a class="headerlink" href="#products-baby_brezza_formula_pro_advanced-baby-brezza-formula-pro-advanced" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+<td><a href="https://www.babybrezza.de/products/formula-pro-advanced">Official Website</a></td>
+</tr>
+</tbody>
+</table>
+<p>We use the Baby Brezza Formula Pro Advanced as to make supplemental formula for our baby. It is an absolute life saver.</p>
+<p><a class="glightbox" href="../products/assets/baby_brezza_formula_pro_advanced.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Baby Brezza Formula Pro Advanced" src="../products/assets/baby_brezza_formula_pro_advanced.png" /></a></p>
+<p>We got it from <a href="https://www.babybrezza.de/products/formula-pro-advanced">the official Baby Brezza website</a>, but you can also find it on Amazon and other retailers.</p>
+<p>We also recommend to get an extra Trichterset:</p>
+<p><a class="glightbox" href="../products/assets/formula-pro-advanced-trichterabdeckung-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Formula Pro Advanced Trichterset" src="../products/assets/formula-pro-advanced-trichterabdeckung-1.png" /></a></p></section><section class="print-page" id="products-baby_brezza_bottle_washer_pro"><h1 id="products-baby_brezza_bottle_washer_pro-baby-brezza-bottle-washer-pro">Baby Brezza Bottle Washer Pro<a class="headerlink" href="#products-baby_brezza_bottle_washer_pro-baby-brezza-bottle-washer-pro" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+<td><a href="https://www.babybrezza.de/products/bottle-washer-pro%C2%AE?srsltid=AfmBOoobEihMJidHM5NbZmr8mG1F8yoowlx8gaRdCTWyXh2G7i8ToNsm">Official Website: Baby Brezza Bottle Washer Pro</a></td>
+</tr>
+</tbody>
+</table>
+<p>For washing baby bottles, we use the <a href="https://www.babybrezza.de/products/bottle-washer-pro%C2%AE?srsltid=AfmBOoobEihMJidHM5NbZmr8mG1F8yoowlx8gaRdCTWyXh2G7i8ToNsm">Baby Brezza Bottle Washer Pro</a>. Absolutely worth the money.</p>
+<p><a class="glightbox" href="../products/assets/bottle-washer-pro.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Baby Brezza Bottle Washer Pro" src="../products/assets/bottle-washer-pro.png" /></a></p></section><section class="print-page" id="products-philips_avent_bottle"><h1 id="products-philips_avent_bottle-philips-avent-natural-baby-bottle">Philips Avent Natural Baby Bottle<a class="headerlink" href="#products-philips_avent_bottle-philips-avent-natural-baby-bottle" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+<td>DM Drogerie, <a href="https://amzn.eu/d/5AamQYb">Amazon</a></td>
+</tr>
+</tbody>
+</table>
+<p>Our midwife recommended the Philips Avent Natural Baby Bottle. We use it for both breast milk and formula. It is easy to clean and has a wide neck for easy filling.</p>
+<p>Our midwife recommended the nipple with the size 1 hole. But we could not find it in DM Supermarket. So we had to <a href="https://www.amazon.de/dp/B0BWFMMPPC?ref=ppx_yo2ov_dt_b_fed_asin_title&amp;th=1">buy from Amazon</a>.</p></section><section class="print-page" id="products-medela_symphony"><h1 id="products-medela_symphony-medela-symphony-milk-pump">Medela Symphony Milk Pump<a class="headerlink" href="#products-medela_symphony-medela-symphony-milk-pump" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+<td>Rented based on Prescription</td>
+</tr>
+</tbody>
+</table>
+<p>We were prescribed the <a href="https://www.medela.com/de-de/stillen-und-abpumpen/produkte/milchpumpen/symphony-und-pumpsets/symphony-krankenhaus-und-mietmilchpumpe?productId=4477">Medela Symphony Milk Pump</a>.</p>
+<p><a class="glightbox" href="../products/assets/medela_symphony.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Medela Symphony Milk Pump" src="../products/assets/medela_symphony.png" /></a></p></section><section class="print-page" id="products-neocate_infant"><h1 id="products-neocate_infant-neocate-infant">Neocate Infant<a class="headerlink" href="#products-neocate_infant-neocate-infant" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+<td>Apotheke</td>
+</tr>
+</tbody>
+</table>
+<p>Official website: <a href="https://www.nutricia.de/med/produkte/neocate/neocate-infant.html">Neocate Infant</a>.</p>
+<div class="admonition note">
+<p><a href="#facilities-koeln_hohenlind">St. Elisabeth-Krankenhaus Köln-Hohenlind</a> provided us with this formula milk before we were discharged from the hospital. They said it reduces the risk of allergies.</p>
+</div>
+<p><a class="glightbox" href="../products/assets/neocate_neocate-infant.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Neocate Infant" src="../products/assets/neocate_neocate-infant.png" /></a></p></section><section class="print-page" id="products-vienna_breastfeeding_donut"><h1 id="products-vienna_breastfeeding_donut-vienna-breastfeeding-donut">Vienna Breastfeeding Donut<a class="headerlink" href="#products-vienna_breastfeeding_donut-vienna-breastfeeding-donut" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></span></td>
+<td>Hospital</td>
+</tr>
+</tbody>
+</table>
+<p>A Vienna Breastfeeding Donut is help relieve the pain of sore or cracked nipples.</p>
+<p><a class="glightbox" href="../products/assets/vienna_breastfeeding_donut.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Vienna Breastfeeding Donut" src="../products/assets/vienna_breastfeeding_donut.jpg" /></a></p>
+<p>It can be purchased but also here is a manual to make it yourself using bandage and nursing pads: <a href="https://www.elacta.eu/wp-content/uploads/2017/04/Vienna-Breastfeeding-Donut.pdf">Vienna Breastfeeding Donut</a>.</p></section><section class="print-page" id="products-chicco_nappy_bin"><h1 id="products-chicco_nappy_bin-chicco-nappy-bin">Chicco Nappy Bin<a class="headerlink" href="#products-chicco_nappy_bin-chicco-nappy-bin" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+<td><a href="https://amzn.eu/d/7S8OJa7">Amazon</a></td>
+</tr>
+</tbody>
+</table>
+<p>We use this <a href="https://amzn.eu/d/7S8OJa7">Chicco nappy pail Odor OFF, odor-proof system, conventional bags can be used, silver</a> for nappy disposal.</p>
+<p><a class="glightbox" href="../products/assets/chicco_nappy_bin.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Chicco Nappy Bin" src="../products/assets/chicco_nappy_bin.png" /></a></p>
+<p>The only thing is that we need to fold the nappy a bit for it to fall into the bin smoothly.</p></section><section class="print-page" id="products-ikea_standing_desk"><h1 id="products-ikea_standing_desk-ikea-standing-desk">IKEA Standing Desk<a class="headerlink" href="#products-ikea_standing_desk-ikea-standing-desk" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+<td>IKEA</td>
+</tr>
+</tbody>
+</table>
+<p>We use the <a href="https://www.ikea.com/de/en/p/mittzon-desk-sit-stand-electric-white-s69528184/">IKEA Mittzon Desk Sit/Stand Electric</a> as a <a href="#new_born-changing_table">changing table</a>. It relieves us from bending down too much and reduced our back pain.</p></section><section class="print-page" id="products-cotabaty_baby_night_light"><h1 id="products-cotabaty_baby_night_light-cotabaty-baby-night-light">Cotabaty Baby Night Light<a class="headerlink" href="#products-cotabaty_baby_night_light-cotabaty-baby-night-light" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+<td><a href="https://amzn.eu/d/2Gg2oC6">Amazon</a></td>
+</tr>
+</tbody>
+</table>
+<p>It has a nice warm light and is very easy to use: flip to turn on/off. It is also dimmable.</p>
+<p>We got it on <a href="https://amzn.eu/d/2Gg2oC6">Amazon</a>.</p></section><section class="print-page" id="products-ergobaby_omni_deluxe_all-in-one"><h1 id="products-ergobaby_omni_deluxe_all-in-one-ergobaby-omni-deluxe-all-in-one">Ergobaby Omni Deluxe All-in-One<a class="headerlink" href="#products-ergobaby_omni_deluxe_all-in-one-ergobaby-omni-deluxe-all-in-one" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+<td><a href="https://amzn.eu/d/dxPeY5k">Amazon</a></td>
+</tr>
+</tbody>
+</table>
+<p>We got the <a href="https://amzn.eu/d/dxPeY5k">Ergobaby Omni Deluxe All-in-One</a> from amazon.</p>
+<p><a class="glightbox" href="../products/assets/ergobaby_omni_deluxe_all-in-one.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Ergobaby Omni Deluxe All-in-One" src="../products/assets/ergobaby_omni_deluxe_all-in-one.png" /></a></p></section><section class="print-page" id="products-peak_design_tech_pouch"><h1 id="products-peak_design_tech_pouch-peak-design-tech-pouch">Peak Design Tech Pouch<a class="headerlink" href="#products-peak_design_tech_pouch-peak-design-tech-pouch" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+<td><a href="https://amzn.eu/d/5AamQYb">Amazon</a></td>
+</tr>
+</tbody>
+</table>
+<p><a class="glightbox" href="../products/assets/peak_design_tech_pouch.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Peak Design Tech Pouch" src="../products/assets/peak_design_tech_pouch.png" /></a></p>
+<p>On <a href="https://amzn.eu/d/5AamQYb">Amazon</a></p></section><section class="print-page" id="products-stokke_tripp_trapp"><h1 id="products-stokke_tripp_trapp-stokke-tripp-trapp-high-chair">Stokke Tripp Trapp High Chair<a class="headerlink" href="#products-stokke_tripp_trapp-stokke-tripp-trapp-high-chair" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Recommended</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+<td><a href="https://www.stokke.com/DEU/de-de/category/hochstuehle/tripp-trapp">Stokke Official Website</a></td>
+</tr>
+</tbody>
+</table>
+<p>We find the Stokke Tripp Trapp high chair very useful. We bought the newborn set and we found the baby like to poop whiile lying on the chair. So we use it as a way to signal our baby to poop.</p></section><h1 class='nav-section-title-end'>Ended: Product Catalog</h1>
+                        <h1 class='nav-section-title' id='section-facilities'>
+                            Facilities <a class='headerlink' href='#section-facilities' title='Permanent link'>↵</a>
+                        </h1>
+                        <section class="print-page" id="facilities-koeln_hohenlind"><h1 id="facilities-koeln_hohenlind-st-elisabeth-krankenhaus-koln-hohenlind">St. Elisabeth-Krankenhaus Köln-Hohenlind<a class="headerlink" href="#facilities-koeln_hohenlind-st-elisabeth-krankenhaus-koln-hohenlind" title="Permanent link">¶</a></h1>
+<p><a href="https://www.hohenlind.de/">St. Elisabeth-Krankenhaus Köln-Hohenlind</a> is a quite friendly hospital located in Koeln.</p></section><h1 class='nav-section-title-end'>Ended: Facilities</h1>
+                        <h1 class='nav-section-title' id='section-about'>
+                            About <a class='headerlink' href='#section-about' title='Permanent link'>↵</a>
+                        </h1>
+                        <section class="print-page" id="meta-roadmap"><h1 id="meta-roadmap-roadmap">Roadmap<a class="headerlink" href="#meta-roadmap-roadmap" title="Permanent link">¶</a></h1>
+<h2 id="meta-roadmap-growing-document">Growing Document<a class="headerlink" href="#meta-roadmap-growing-document" title="Permanent link">¶</a></h2>
+<p>We treat this as a living document. As we learn more about our baby, we will update this document.</p>
+<h2 id="meta-roadmap-keep-our-edit-history">Keep Our Edit History<a class="headerlink" href="#meta-roadmap-keep-our-edit-history" title="Permanent link">¶</a></h2>
+<p>See the change history overview in <a href="#meta-changelog">Changelog</a>. The detailed change history is in the <a href="https://github.com/emptymalei/baby">GitHub repository</a>.</p></section><section class="print-page" id="meta-changelog"><h1 id="meta-changelog-changelog">Changelog<a class="headerlink" href="#meta-changelog-changelog" title="Permanent link">¶</a></h1>
+<h2 id="meta-changelog-2025-05-04">2025-05-04<a class="headerlink" href="#meta-changelog-2025-05-04" title="Permanent link">¶</a></h2>
+<ul>
+<li>Added more contents in roadmap.</li>
+</ul></section><section class="print-page" id="meta-tags"><h1 id="meta-tags-tags">Tags<a class="headerlink" href="#meta-tags-tags" title="Permanent link">¶</a></h1>
+<p>Following is a list of tags:</p>
+<p>[TAGS]</p></section><section class="print-page" id="meta-supplementary"><h1 id="meta-supplementary-supplementary-materials">Supplementary Materials<a class="headerlink" href="#meta-supplementary-supplementary-materials" title="Permanent link">¶</a></h1>
+<p>In this part, we showcase some supplementary materials such as jupyter notebooks.</p></section><h1 class='nav-section-title-end'>Ended: About</h1></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/emptymalei/baby" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "/", "features": ["navigation.sections", "navigation.tabs", "content.tooltips", "announce.dismiss", "content.tabs.link"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+        <script src="../assets/javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../assets/javascripts/jquery.min.js"></script>
+      
+        <script src="../assets/javascripts/echarts.min.js"></script>
+      
+        <script src="../assets/javascripts/interactive_graph.js"></script>
+      
+    
+  </body>
+</html>
