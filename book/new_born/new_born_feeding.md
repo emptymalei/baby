@@ -16,7 +16,7 @@ The hospital provided us with a lotion called [[products/hpa_lanolin_lansinoh|"H
 
 !!! info "Laser Treatment of Nipples"
 
-    In some hospitals, for example, [St. Elisabeth-Krankenhaus Köln-Hohenlind](https://www.hohenlind.de/) in Cologne, offer laser treatment for your nipples. This is a very good option if you have sore or cracked nipples.
+    In some hospitals, for example, [[facilities/koeln_hohenlind|St. Elisabeth-Krankenhaus Köln-Hohenlind]] in Cologne, offer laser treatment for your nipples. This is a very good option if you have sore or cracked nipples.
 
     If you are interested in the technical details of the laser treatment, you can read about it in the following article [@effectiveness_cirico_2021] [@nuts_chung_2012],
 
@@ -27,10 +27,36 @@ The hospital provided us with a lotion called [[products/hpa_lanolin_lansinoh|"H
 
 !!! info "Choose a Good Fabric for Your Clothes/Pajamas"
 
-    Fabrics that are comfortable for the nipples:
+    Sometimes the [[products/vienna_breastfeeding_donut|Vienna breastfeeding donut]] doesn't help and made the nipple pain worse.
+
+    But we found some clothes made from some specific fabrics are comfortable for the nipples:
 
     - Modal textiles.
 
-    Fabrics that we found is causes irritation to the nipples:
+    The following are fabrics that we found is causes irritation to the nipples:
 
     - Cotton.
+
+
+## Milk Extraction
+
+In Germany, you can get a prescription for a breast pump and the insurance will pay for it.
+
+The one we got from the prescription was the [[products/medela_symphony|Medela Symphony Milk Pump]].
+
+
+## Bottle Feeding
+
+We use the [[products/philips_avent_bottle|Philips Avent Bottle]] for bottle feeding.
+
+Washing bottles is a pain. Luckily [[products/baby_brezza_bottle_washer_pro|Baby Brezza Bottle Washer Pro]] saved us a lot of time and effort.
+
+## Formula Milk
+
+We also use formula milk. We have tried the following brands:
+
+- [Aptamil](https://www.aptaclub.de/)
+- [Hipp](https://www.hipp.de/)
+- [Neocate](https://www.neocate.de/)
+
+All are fine. We decided to go with the [[products/neocate_infant|Neocate Infant]] because our hospital provided it and our baby liked it. Personally, we don't feel any difference between the three brands.
