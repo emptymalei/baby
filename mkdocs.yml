@@ -208,6 +208,7 @@ nav:
     - "New Born Overview": new_born/index.md
     - "New Born Feeding": new_born/new_born_feeding.md
     - "Mother's Milk": new_born/mothers_milk.md
+    - "Changing Table": new_born/changing_table.md
   - "Documents":
     - "Documents Overview": documents/index.md
     - "Kinderuntersuchungsheft": documents/kinderuntersuchungsheft.md
@@ -228,6 +229,9 @@ nav:
     - "Medela Symphony Milk Pump": products/medela_symphony.md
     - "Neocate Infant": products/neocate_infant.md
     - "Vienna Breastfeeding Donut": products/vienna_breastfeeding_donut.md
+    - "Chicco Nappy Bin": products/chicco_nappy_bin.md
+    - "Ikea Standing Desk": products/ikea_standing_desk.md
+    - "Cotabaty Baby Night Light": products/cotabaty_baby_night_light.md
   - "Facilities":
     - "St. Elisabeth-Krankenhaus Köln-Hohenlind": facilities/koeln_hohenlind.md
   - "About":
