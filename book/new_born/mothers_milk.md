@@ -4,10 +4,9 @@
 
 At room temperature (~ 25°C), up to 4 hours[^cdc_breast_milk][^nhs_breast_milk]. CDC provides a nice info-graphic for storing breast milk[^cdc_storage_info].
 
-![storing fresh](assets/Breastmilk-ECE-082022-508_2-1.png)
-
-![storing used](assets/Breastmilk-ECE-082022-508_2-2.png)
-
+|  |  |
+|----------------|---------|
+| ![storing fresh](assets/Breastmilk-ECE-082022-508_2-1.png) | ![storing used](assets/Breastmilk-ECE-082022-508_2-2.png) |
 
 
 [^cdc_breast_milk]: CDC. Breast Milk Storage and Preparation. Breastfeeding. 2024.https://www.cdc.gov/breastfeeding/breast-milk-preparation-and-storage/handling-breastmilk.html#:~:text=Freshly%20expressed%20or%20pumped%20milk,to%2012%20months%20is%20acceptable. (accessed 9 May2025).
