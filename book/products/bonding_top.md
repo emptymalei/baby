@@ -1,5 +1,9 @@
 # Bonding Top
 
+| Recommended | Where |
+| ----------- | ---------- |
+| :material-check:       |   [Amazon](https://amzn.eu/d/1Xr5aN1)   |
+
 Bonding top was one of the most useful items in our hospital bag. The hospital we visited also provides bonding tops.
 
 We bought this [Hoppediz Baby Bonding Top for Birth, Sectio and Postpartum, Organic Quality, Sage M](https://amzn.eu/d/1Xr5aN1) from Amazon.

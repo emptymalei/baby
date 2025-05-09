@@ -1,5 +1,9 @@
 # Klean Kanteen Water Bottle
 
+| Recommended | Where |
+| ----------- | ---------- |
+| :material-check:       |  [Amazon](https://amzn.eu/d/7AYtCZK)  |
+
 On [Amazon.de](https://amzn.eu/d/7AYtCZK):
 
 ![Klean Kanteen Water Bottle](assets/klean_kanteen_water_bottle.png)

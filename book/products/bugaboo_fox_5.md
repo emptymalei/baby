@@ -1,5 +1,9 @@
 # Bugaboo Fox 5 Kinderwagen 3 in 1 Set
 
+| Recommended | Where |
+| ----------- | ---------- |
+| :material-check:       |   [official website](https://www.bugaboo.com/de-de/kinderwagen-sets/fox-5/bugaboo-fox-5-kinderwagen-3-in-1-set-BP10020.html)   |
+
 We use the Bugaboo Fox 5 series. It has a stroller set and a car seat.
 
 ![Bugaboo Fox 5](assets/bugaboo_fox_5.png)

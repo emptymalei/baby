@@ -1,5 +1,9 @@
 # Vienna Breastfeeding Donut
 
+| Recommended | Where |
+| ----------- | ---------- |
+| :material-close:       |  Hospital |
+
 A Vienna Breastfeeding Donut is help relieve the pain of sore or cracked nipples.
 
 ![Vienna Breastfeeding Donut](assets/vienna_breastfeeding_donut.jpg)

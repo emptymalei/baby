@@ -154,7 +154,7 @@ plugins:
       type: date
       fallback_to_build_date: true
   - git-committers:
-      enabled: true
+      enabled: !ENV [CI, false]
       repository: emptymalei/baby
       branch: main
       docs_path: book
@@ -222,6 +222,7 @@ nav:
     - "Google Drive": products/google_drive.md
     - "Klean Kanteen Water Bottle": products/klean_kanteen_bottle.md
     - "Bonding Top": products/bonding_top.md
+    - "Boba Baby Wrap": products/boba_baby_wrap.md
     - "Nobamed Pflegetuch": products/nobamed_pflegetuch.md
     - "PoeticEHome Soft Dry Wipes": products/poeticehome_soft_dry_wipes.md
     - "Bugaboo Fox 5": products/bugaboo_fox_5.md
