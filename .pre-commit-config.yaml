@@ -11,6 +11,7 @@ repos:
         exclude: ^mkdocs
       - id: check-added-large-files
         args: ['--maxkb=2000']
+        exclude: '2023-05-12_G-BA_Kinderuntersuchungsheft_WEB_ENG_WZ\.pdf'
   - repo: https://github.com/DavidAnson/markdownlint-cli2
     rev: v0.17.1
     hooks:

@@ -76,9 +76,19 @@ There is no need to stress out about the hospital. Our experience with the hospi
             - [ ] Find a list that is suitable for your hospital. You can find ours below this checklist.
             - [ ] Make sure you have all your important documents sorted out and reachable. This can help you speed up the process of getting into the hospital.
 
+        - [ ] Find your way of keep track of baby activities. It can be pen and paper, or an app. Because you will need to track the feeding and diaper changes of your baby while in the hospital.
+
+            !!! tip ""
+                We use the [[products/baby_daybook|Baby Daybook]] app.
+
     === "After Labor"
 
         - [ ] Birth registration.
+        - [ ] Baby car seat.
+
+            !!! tip ""
+                We used the [[products/bugaboo_fox_5|Bugaboo Fox 5 Kinderwagen 3 in 1 Set]]. It has a car seat that is very well designed.
+        - [ ] Remember to take the [[documents/kinderuntersuchungsheft|Kinderuntersuchungsheft]] from the hospital.
 
 
 

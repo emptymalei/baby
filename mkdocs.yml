@@ -208,6 +208,9 @@ nav:
     - "New Born Overview": new_born/index.md
     - "New Born Feeding": new_born/new_born_feeding.md
     - "Mother's Milk": new_born/mothers_milk.md
+  - "Documents":
+    - "Documents Overview": documents/index.md
+    - "Kinderuntersuchungsheft": documents/kinderuntersuchungsheft.md
   - "Product Catalog":
     - "Product Catalog": products/index.md
     - "HPA Lanolin": products/hpa_lanolin_lansinoh.md
@@ -217,6 +220,10 @@ nav:
     - "Bonding Top": products/bonding_top.md
     - "Nobamed Pflegetuch": products/nobamed_pflegetuch.md
     - "PoeticEHome Soft Dry Wipes": products/poeticehome_soft_dry_wipes.md
+    - "Bugaboo Fox 5": products/bugaboo_fox_5.md
+    - "Baby Daybook": products/baby_daybook.md
+  - "Facilities":
+    - "St. Elisabeth-Krankenhaus Köln-Hohenlind": facilities/koeln_hohenlind.md
   - "About":
     - "Roadmap": meta/roadmap.md
     - "Changelog": meta/changelog.md
