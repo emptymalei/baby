@@ -199,7 +199,7 @@ nav:
   - "Pregnancy":
     - "Pregnancy Overview": pregnancy/index.md
     - "Midwife": pregnancy/midwife.md
-    - "Pregnancy Symptoms": pregnancy/pregnancy-symptoms.md
+    - "About Pregnancy": pregnancy/pregnancy.md
   - "Giving Birth":
     - "Giving Birth Overview": giving_birth/index.md
     - "Preparing for Labor": giving_birth/preparing_for_labor.md
@@ -239,10 +239,12 @@ nav:
     - "Ergobaby Carrier": products/ergobaby_omni_deluxe_all-in-one.md
     - "Peak Design Tech Pouch": products/peak_design_tech_pouch.md
     - "Stokke Tripp Trapp": products/stokke_tripp_trapp.md
+    - "Zirkulin Bio Flohsamen Schalen": products/zirkulin_bio_flohsamen_schalen.md
   - "Facilities":
     - "St. Elisabeth-Krankenhaus Köln-Hohenlind": facilities/koeln_hohenlind.md
   - "About":
     - "Roadmap": meta/roadmap.md
+    - "References": meta/references.md
     - "Changelog": meta/changelog.md
     - "Tags": meta/tags.md
     - "Supplementary": meta/supplementary.md
