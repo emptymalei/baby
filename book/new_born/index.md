@@ -4,7 +4,7 @@ It was quite confusing the first time I interacted with our new born.
 
 ## Choose Your Tracking Method
 
-We can't emphasize enough how important it is choose a convenient method to track your new born's activities. People may have great memories but it becomes really hard when we experience sleeping deprivation.
+We can't emphasize enough how important it is choose a convenient method to track your new born's activities. People may have great memories but it becomes really hard when we experience sleep deprivation.
 
 !!! tip "Baby Daybook App"
 
