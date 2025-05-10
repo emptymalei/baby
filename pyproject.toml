@@ -25,6 +25,7 @@ mkdocs-obsidian-bridge = "^1.2.0"
 mkdocs-glightbox = "^0.4.0"
 mkdocs-git-revision-date-localized-plugin = "^1.4.5"
 mkdocs-git-committers-plugin-2 = "^2.5.0"
+mkdocs-charts-plugin = "^0.0.12"
 
 
 [build-system]

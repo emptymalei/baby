@@ -780,6 +780,22 @@ mkdocs = ">=1"
 tests = ["pytest"]
 
 [[package]]
+name = "mkdocs-charts-plugin"
+version = "0.0.12"
+description = "MkDocs plugin to add charts from data"
+optional = false
+python-versions = ">=3.7"
+groups = ["main"]
+files = [
+    {file = "mkdocs_charts_plugin-0.0.12-py3-none-any.whl", hash = "sha256:b3b2c8b06d87903e7f50318dd8c908e44455ea83ffc99c49d518ab0cf93a2ec2"},
+    {file = "mkdocs_charts_plugin-0.0.12.tar.gz", hash = "sha256:095150824a966852a4556fe5f501d17c08346acccdd0d43c340e3adcea686314"},
+]
+
+[package.dependencies]
+mkdocs = ">=1.1"
+pymdown-extensions = ">=9.2"
+
+[[package]]
 name = "mkdocs-exclude-search"
 version = "0.6.5"
 description = "A mkdocs plugin that lets you exclude selected files or sections from the search index."
@@ -1688,4 +1704,4 @@ test = ["pytest"]
 [metadata]
 lock-version = "2.1"
 python-versions = "3.10.14"
-content-hash = "5604e3d042506165aa1dc7490dd65a32f6556430c6094b257088ceb98e74af75"
+content-hash = "8a15cde653aa1c82d162e4b792a50d3a81ff0707a792292a318991d9c55669a3"

@@ -62,6 +62,9 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: vegalite
+          class: vegalite
+          format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -86,6 +89,9 @@ extra_javascript:
   - assets/javascripts/jquery.min.js
   - assets/javascripts/echarts.min.js
   - assets/javascripts/interactive_graph.js
+  - https://cdn.jsdelivr.net/npm/vega@5
+  - https://cdn.jsdelivr.net/npm/vega-lite@5
+  - https://cdn.jsdelivr.net/npm/vega-embed@6
 
 extra_css:
   - assets/stylesheets/interactive_graph.css
@@ -158,6 +164,7 @@ plugins:
       repository: emptymalei/baby
       branch: main
       docs_path: book
+  - charts
 
 
 
