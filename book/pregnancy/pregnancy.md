@@ -10,6 +10,9 @@
 
 A large fraction of pregnant women reported sleep disruption during pregnancy [@Won2015-wz].
 
+!!! note "A Good Read"
+
+    [Won CHJ. Sleeping for Two: The Great Paradox of Sleep in Pregnancy. Journal of Clinical Sleep Medicine 2015.](https://jcsm.aasm.org/doi/10.5664/jcsm.4760) is a fun read.
 
 ## Hypertension
 
