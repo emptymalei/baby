@@ -242,36 +242,42 @@
     },
     {
       "id": "40",
+      "name": "Withings Thermo",
+      "symbolSize": 0,
+      "value": "/products/withings_thermo/"
+    },
+    {
+      "id": "41",
       "name": "St. Elisabeth-Krankenhaus K\u00f6ln-Hohenlind",
       "symbolSize": 4,
       "value": "/facilities/koeln_hohenlind/"
     },
     {
-      "id": "41",
+      "id": "42",
       "name": "Roadmap",
       "symbolSize": 1,
       "value": "/meta/roadmap/"
     },
     {
-      "id": "42",
+      "id": "43",
       "name": "References",
       "symbolSize": 0,
       "value": "/meta/references/"
     },
     {
-      "id": "43",
+      "id": "44",
       "name": "Changelog",
       "symbolSize": 1,
       "value": "/meta/changelog/"
     },
     {
-      "id": "44",
+      "id": "45",
       "name": "Tags",
       "symbolSize": 0,
       "value": "/meta/tags/"
     },
     {
-      "id": "45",
+      "id": "46",
       "name": "Supplementary",
       "symbolSize": 0,
       "value": "/meta/supplementary/"
@@ -292,7 +298,7 @@
     },
     {
       "source": "6",
-      "target": "40"
+      "target": "41"
     },
     {
       "source": "5",
@@ -328,11 +334,11 @@
     },
     {
       "source": "7",
-      "target": "40"
+      "target": "41"
     },
     {
-      "source": "41",
-      "target": "43"
+      "source": "42",
+      "target": "44"
     },
     {
       "source": "11",
@@ -360,7 +366,7 @@
     },
     {
       "source": "9",
-      "target": "40"
+      "target": "41"
     },
     {
       "source": "9",
@@ -404,7 +410,7 @@
     },
     {
       "source": "31",
-      "target": "40"
+      "target": "41"
     },
     {
       "source": "24",
