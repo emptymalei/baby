@@ -51,7 +51,7 @@
     {
       "id": "8",
       "name": "New Born Overview",
-      "symbolSize": 5,
+      "symbolSize": 6,
       "value": "/new_born/"
     },
     {
@@ -117,7 +117,7 @@
     {
       "id": "19",
       "name": "Baby Daybook App",
-      "symbolSize": 1,
+      "symbolSize": 2,
       "value": "/products/baby_daybook/"
     },
     {
@@ -357,6 +357,10 @@
     {
       "source": "45",
       "target": "47"
+    },
+    {
+      "source": "8",
+      "target": "19"
     },
     {
       "source": "8",
