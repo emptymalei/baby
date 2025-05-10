@@ -5,9 +5,9 @@
 
     [D. C. Davis, “The discomforts of pregnancy,” J. Obstet. Gynecol. Neonatal Nurs., vol. 25, no. 1, pp. 73–81, Jan. 1996, doi: 10.1111/j.1552-6909.1996.tb02516.x. Available: http://dx.doi.org/10.1111/j.1552-6909.1996.tb02516.x. [Accessed: May 10, 2025]](http://dx.doi.org/10.1111/j.1552-6909.1996.tb02516.x)[@Davis1996-av]
 
-!!! note "A Review Article on Psychological Changes During Pregnancy"
+!!! note "Article on Psychological Changes During Pregnancy"
 
-    [P. Soma-Pillay, C. Nelson-Piercy, H. Tolppanen, and A. Mebazaa, “Physiological changes in pregnancy : review articles,” Cardiovascular Journal of Africa. Available: https://journals.co.za/doi/10.5830/CVJA-2016-021. [Accessed: May 09, 2025]](https://journals.co.za/doi/10.5830/CVJA-2016-021)[@Soma-PillayUnknown-lq]
+    [A. Carlin and Z. Alfirevic, “Physiological changes of pregnancy and monitoring,” Best Pract. Res. Clin. Obstet. Gynaecol., vol. 22, no. 5, pp. 801–823, Oct. 2008, doi: 10.1016/j.bpobgyn.2008.06.005. Available: http://dx.doi.org/10.1016/j.bpobgyn.2008.06.005. [Accessed: May 10, 2025]](http://dx.doi.org/10.1016/j.bpobgyn.2008.06.005)[@Carlin2008-bn]
 
 
 ## Constipation
