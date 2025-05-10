@@ -10,3 +10,6 @@ We are using the [Baby Daybook](https://babydaybook.app/) app to track our baby'
 We use it to track almost all activities of our baby. In the beginning, we thought it would be too much work, however, the app is very easy to use and we find it extremely helpful to keep track of things such as when we need to feed the baby again.
 
 We purchased the premium version of the app because we use it a lot.
+
+??? tip "Backups and Data"
+    I noticed that the backups are sqlite files. With a bit of effort, we can extract the data and transform the data into whatever we need.
