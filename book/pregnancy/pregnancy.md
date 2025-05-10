@@ -9,6 +9,11 @@
 
     [A. Carlin and Z. Alfirevic, “Physiological changes of pregnancy and monitoring,” Best Pract. Res. Clin. Obstet. Gynaecol., vol. 22, no. 5, pp. 801–823, Oct. 2008, doi: 10.1016/j.bpobgyn.2008.06.005. Available: http://dx.doi.org/10.1016/j.bpobgyn.2008.06.005. [Accessed: May 10, 2025]](http://dx.doi.org/10.1016/j.bpobgyn.2008.06.005)[@Carlin2008-bn]
 
+## Weight
+
+!!! tip "Weight Tracking"
+    We use the [[products/withings_body_smart|Withings Body Smart]] scale to track weight gain during pregnancy.
+
 
 ## Constipation
 
