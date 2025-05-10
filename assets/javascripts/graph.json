@@ -51,37 +51,37 @@
     {
       "id": "8",
       "name": "New Born Overview",
-      "symbolSize": 0,
+      "symbolSize": 5,
       "value": "/new_born/"
     },
     {
       "id": "9",
       "name": "New Born Feeding",
-      "symbolSize": 9,
+      "symbolSize": 10,
       "value": "/new_born/new_born_feeding/"
     },
     {
       "id": "10",
       "name": "Mother's Milk",
-      "symbolSize": 1,
+      "symbolSize": 2,
       "value": "/new_born/mothers_milk/"
     },
     {
       "id": "11",
       "name": "Changing Table",
-      "symbolSize": 4,
+      "symbolSize": 5,
       "value": "/new_born/changing_table/"
     },
     {
       "id": "12",
       "name": "Sleeping",
-      "symbolSize": 2,
+      "symbolSize": 3,
       "value": "/new_born/sleeping/"
     },
     {
       "id": "13",
       "name": "Outdoor and Traveling",
-      "symbolSize": 1,
+      "symbolSize": 2,
       "value": "/new_born/outdoor_and_traveling/"
     },
     {
@@ -357,6 +357,26 @@
     {
       "source": "45",
       "target": "47"
+    },
+    {
+      "source": "8",
+      "target": "9"
+    },
+    {
+      "source": "8",
+      "target": "10"
+    },
+    {
+      "source": "8",
+      "target": "11"
+    },
+    {
+      "source": "8",
+      "target": "12"
+    },
+    {
+      "source": "8",
+      "target": "13"
     },
     {
       "source": "11",
