@@ -164,6 +164,7 @@ plugins:
       repository: emptymalei/baby
       branch: main
       docs_path: book
+      token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
   - charts
 
 
