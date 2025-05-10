@@ -20,9 +20,9 @@
     },
     {
       "id": "3",
-      "name": "Pregnancy Symptoms",
-      "symbolSize": 1,
-      "value": "/pregnancy/pregnancy-symptoms/"
+      "name": "About Pregnancy",
+      "symbolSize": 2,
+      "value": "/pregnancy/pregnancy/"
     },
     {
       "id": "4",
@@ -236,30 +236,42 @@
     },
     {
       "id": "39",
+      "name": "Zirkulin Bio Flohsamen Schalen",
+      "symbolSize": 1,
+      "value": "/products/zirkulin_bio_flohsamen_schalen/"
+    },
+    {
+      "id": "40",
       "name": "St. Elisabeth-Krankenhaus K\u00f6ln-Hohenlind",
       "symbolSize": 4,
       "value": "/facilities/koeln_hohenlind/"
     },
     {
-      "id": "40",
+      "id": "41",
       "name": "Roadmap",
       "symbolSize": 1,
       "value": "/meta/roadmap/"
     },
     {
-      "id": "41",
+      "id": "42",
+      "name": "References",
+      "symbolSize": 0,
+      "value": "/meta/references/"
+    },
+    {
+      "id": "43",
       "name": "Changelog",
       "symbolSize": 1,
       "value": "/meta/changelog/"
     },
     {
-      "id": "42",
+      "id": "44",
       "name": "Tags",
       "symbolSize": 0,
       "value": "/meta/tags/"
     },
     {
-      "id": "43",
+      "id": "45",
       "name": "Supplementary",
       "symbolSize": 0,
       "value": "/meta/supplementary/"
@@ -280,7 +292,7 @@
     },
     {
       "source": "6",
-      "target": "39"
+      "target": "40"
     },
     {
       "source": "5",
@@ -316,11 +328,11 @@
     },
     {
       "source": "7",
-      "target": "39"
+      "target": "40"
     },
     {
-      "source": "40",
-      "target": "41"
+      "source": "41",
+      "target": "43"
     },
     {
       "source": "11",
@@ -348,7 +360,7 @@
     },
     {
       "source": "9",
-      "target": "39"
+      "target": "40"
     },
     {
       "source": "9",
@@ -383,12 +395,16 @@
       "target": "3"
     },
     {
+      "source": "3",
+      "target": "39"
+    },
+    {
       "source": "34",
       "target": "11"
     },
     {
       "source": "31",
-      "target": "39"
+      "target": "40"
     },
     {
       "source": "24",
