@@ -10,6 +10,16 @@ We can't emphasize enough how important it is choose a convenient method to trac
 
     We use the [[products/baby_daybook|Baby Daybook]] app. It is absolutely nailing the tracking of our new born's activities.
 
+
+## Trustworthy Sources of Information
+
+
+
+!!! tip "Pathways.org"
+
+    We find the website [[products/pathways_org|Pathways.org]] quite useful.
+
+
 ## Topics
 
 We will discuss a few topics here:
