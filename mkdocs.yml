@@ -106,7 +106,7 @@ plugins:
   - obsidian-bridge
   - glightbox
   - autorefs
-  - git-authors
+  # - git-authors
   # - exclude-search:
   #     exclude:
   #       - notebooks/tree_darts
