@@ -25,6 +25,7 @@ theme:
     - content.tooltips
     - announce.dismiss
     - content.tabs.link
+    - content.action.edit
   palette:
     - scheme: default
       primary: deep purple
