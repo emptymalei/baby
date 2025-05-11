@@ -11,7 +11,7 @@ We can't emphasize enough how important it is choose a convenient method to trac
     We use the [[products/baby_daybook|Baby Daybook]] app. It is absolutely nailing the tracking of our new born's activities.
 
 
-## Trustworthy Sources of Information
+## Sources of Information
 
 
 
