@@ -4,7 +4,7 @@ site_author: "Lei Ma"
 site_description: "Time Series with Deep Learning Quick Bite"
 site_url: "https://baby.leima.is"
 repo_url: "https://github.com/emptymalei/baby"
-edit_uri: "blob/main/baby/"
+edit_uri: "edit/main/book/"
 repo_name: "emptymalei/baby"
 docs_dir: "book"
 
