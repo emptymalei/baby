@@ -51,7 +51,7 @@
     {
       "id": "8",
       "name": "New Born Overview",
-      "symbolSize": 6,
+      "symbolSize": 7,
       "value": "/new_born/"
     },
     {
@@ -123,7 +123,7 @@
     {
       "id": "20",
       "name": "Pathways.org",
-      "symbolSize": 0,
+      "symbolSize": 1,
       "value": "/products/pathways_org/"
     },
     {
@@ -361,6 +361,10 @@
     {
       "source": "8",
       "target": "19"
+    },
+    {
+      "source": "8",
+      "target": "20"
     },
     {
       "source": "8",
