@@ -34,4 +34,7 @@ jobs:
           poetry --version
           poetry install
       - uses: nikeee/setup-pandoc@v1
-      - run: poetry run mkdocs gh-deploy --force
+      - name: build and publish
+        run: poetry run mkdocs gh-deploy --force
+        env:
+          MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.MKDOCS_GIT_COMMITTERS_APIKEY }}
