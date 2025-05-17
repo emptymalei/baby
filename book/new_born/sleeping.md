@@ -97,7 +97,7 @@ There is not much sleeping length study for new born infants. We found a researc
     }
     ```
 
-=== "Longest Sleep Duration"
+=== ":material-chart-box-outline: Longest Sleep Duration"
 
     The following chart shows the average daily longest sleep (hours) and the standard deviation (error bars) of the data.
 
@@ -164,7 +164,7 @@ There is not much sleeping length study for new born infants. We found a researc
     }
     ```
 
-=== "Daily Longest Wakefulness"
+=== ":material-chart-box-outline: Daily Longest Wakefulness"
 
     The following chart shows the average daily longest wakefulness (hours) and the standard deviation (error bars) of the data.
 
@@ -323,6 +323,6 @@ Research indicates that parents should encouraging independence and self-soothin
 
 
 
-## Other Research Papers
+## Research Papers
 
 <iframe src="https://app.litmaps.com/shared/f7a78020-a15a-4760-9e9e-956e31259a0c"  frameborder="0" style="overflow:hidden;height:800px;width:100%" height="800px" width="100%" title="Research Papers about Pregnancy"></iframe>
