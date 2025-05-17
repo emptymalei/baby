@@ -113,6 +113,8 @@ plugins:
   #       - notebooks/tree_darts
   - tags
   - meta
+  - privacy:
+      enabled: !ENV [CI, false]
   - bibtex:
       bib_dir: "book/assets/references"
       csl_file: "book/assets/csl/nature-publishing-group-vancouver.csl" # https://github.com/citation-style-language/styles/blob/master/nature-publishing-group-vancouver.csl
@@ -171,30 +173,30 @@ plugins:
 
 
 extra:
-  # analytics:
-  #   provider: google
-  #   property: G-9XN0RGHSE1
-  #   feedback:
-  #     title: Was this page helpful?
-  #     ratings:
-  #       - icon: material/emoticon-happy-outline
-  #         name: This page was helpful
-  #         data: 1
-  #         note: >-
-  #           Thanks for your feedback!
-  #       - icon: material/emoticon-sad-outline
-  #         name: This page could be improved
-  #         data: 0
-  #         note: >-
-  #           Thanks for your feedback! Help us improve this page by
-  #           using our <a href="https://github.com/emptymalei/baby/issues" target="_blank" rel="noopener">GitHub Issues or Discussions</a>.
-  # consent:
-  #   title: Cookie consent
-  #   description: >-
-  #     We use cookies to recognize your repeated visits and preferences, as well
-  #     as to measure the effectiveness of our documentation and whether users
-  #     find what they're searching for. With your consent, you're helping us to
-  #     make our documentation better.
+  analytics:
+    provider: google
+    property: G-L4M0XMWGY7
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://github.com/emptymalei/baby/discussions" target="_blank" rel="noopener">GitHub Discussions</a>.
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to enable your feedback and recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our content and whether users
+      find what they're searching for. With your consent, you're helping us to
+      create better and more accurate content.
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/emptymalei/baby
