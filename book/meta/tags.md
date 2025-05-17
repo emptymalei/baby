@@ -2,4 +2,4 @@
 
 Following is a list of tags:
 
-[TAGS]
+<!-- material/tags -->

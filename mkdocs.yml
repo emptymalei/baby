@@ -111,8 +111,8 @@ plugins:
   # - exclude-search:
   #     exclude:
   #       - notebooks/tree_darts
-  - tags:
-      tags_file: tags.md
+  - tags
+  - meta
   - bibtex:
       bib_dir: "book/assets/references"
       csl_file: "book/assets/csl/nature-publishing-group-vancouver.csl" # https://github.com/citation-style-language/styles/blob/master/nature-publishing-group-vancouver.csl
@@ -121,6 +121,17 @@ plugins:
   #     ignore: ["notebooks/.ipynb_checkpoints/*"]
   #     include_source: true
   #     execute: false
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      fallback_to_build_date: true
+  - git-committers:
+      enabled: !ENV [CI, false]
+      repository: emptymalei/baby
+      branch: main
+      docs_path: book/
+      token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
+  - charts
   - print-site:
       add_to_navigation: false
       print_page_title: 'The Parents and Baby Book'
@@ -156,17 +167,6 @@ plugins:
   #     enabled_if_env: ENABLE_PDF_EXPORT
   #     render_js: true
   #     headless_chrome_path: "google-chrome"
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: date
-      fallback_to_build_date: true
-  - git-committers:
-      enabled: !ENV [CI, false]
-      repository: emptymalei/baby
-      branch: main
-      docs_path: book/
-      token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
-  - charts
 
 
 
