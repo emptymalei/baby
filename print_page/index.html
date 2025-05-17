@@ -2973,8 +2973,140 @@
 <p class="admonition-title">20 Minutes Rule</p>
 <p>An idea would be that we only put down the baby 20min if she/he falls asleep in our arms. This would be a safe bet that the baby is not in a transitional sleep stage. But I didn't find enough data to support this idea only the above EEG sample.</p>
 </div>
+<h2 id="new_born-sleeping-sleeping-length">Sleeping Length<a class="headerlink" href="#new_born-sleeping-sleeping-length" title="Permanent link">¶</a></h2>
+<p>There is not much sleeping length study for new born infants. We found a research paper Parmelee et al. 1964 that collected data of sleeping hours per day of 46 new born infants. The following table is a recreation of their table 2<sup id="fnref:3"><a class="footnote-ref" href="#new_born-sleeping-fn:3">3</a></sup>.</p>
+<table>
+<thead>
+<tr>
+<th>Age in weeks</th>
+<th>Average total daily sleep (hours)</th>
+<th>S.D.</th>
+<th>Average daily longest sleep (hours)</th>
+<th>S.D.</th>
+<th>Average daily longest wakefulness (hours)</th>
+<th>S.D.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>16.32</td>
+<td>1.72</td>
+<td>4.08</td>
+<td>0.67</td>
+<td>2.39</td>
+<td>0.84</td>
+</tr>
+<tr>
+<td>2</td>
+<td>16.25</td>
+<td>1.60</td>
+<td>4.41</td>
+<td>0.95</td>
+<td>2.61</td>
+<td>0.89</td>
+</tr>
+<tr>
+<td>4</td>
+<td>15.43</td>
+<td>1.60</td>
+<td>4.62</td>
+<td>1.02</td>
+<td>3.08</td>
+<td>1.04</td>
+</tr>
+<tr>
+<td>8</td>
+<td>15.42</td>
+<td>1.70</td>
+<td>6.47</td>
+<td>1.42</td>
+<td>3.15</td>
+<td>1.10</td>
+</tr>
+<tr>
+<td>12</td>
+<td>15.11</td>
+<td>1.48</td>
+<td>7.67</td>
+<td>1.69</td>
+<td>3.41</td>
+<td>0.92</td>
+</tr>
+<tr>
+<td>16</td>
+<td>14.87</td>
+<td>1.39</td>
+<td>8.48</td>
+<td>1.69</td>
+<td>3.56</td>
+<td>1.05</td>
+</tr>
+</tbody>
+</table>
+<p>We observe a decrease in sleeping hours per day and an increase in the longest sleep duration. The trend is visualized below.</p>
+<p><vegachart style='width: 100%'  class="vegalite">{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Sleeping Hours Per Day from Parmelee et al. 1964",
+  "data": {
+    "values": [
+      { "age_weeks": 1, "mean_sleep": 16.32, "sd_sleep": 1.72 },
+      { "age_weeks": 2, "mean_sleep": 16.25, "sd_sleep": 1.60 },
+      { "age_weeks": 4, "mean_sleep": 15.43, "sd_sleep": 1.60 },
+      { "age_weeks": 8, "mean_sleep": 15.42, "sd_sleep": 1.70 },
+      { "age_weeks": 12, "mean_sleep": 15.11, "sd_sleep": 1.48 },
+      { "age_weeks": 16, "mean_sleep": 14.87, "sd_sleep": 1.39 }
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "datum.mean_sleep - datum.sd_sleep/2",
+      "as": "lower_sleep"
+    },
+    {
+      "calculate": "datum.mean_sleep + datum.sd_sleep/2",
+      "as": "upper_sleep"
+    }
+  ],
+  "layer": [
+    {
+      "mark": "errorbar",
+      "encoding": {
+        "y": {
+          "field": "upper_sleep",
+          "type": "quantitative",
+          "scale": {"zero": false},
+          "title": "Average Total Daily Sleep (hours)"
+        },
+        "y2": { "field": "lower_sleep" },
+        "x": {
+          "field": "age_weeks",
+          "type": "quantitative",
+          "title": "Age (weeks)"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "black"
+      },
+      "encoding": {
+        "y": {
+          "field": "mean_sleep",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "age_weeks",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}</vegachart></p>
 <h2 id="new_born-sleeping-sleeping-positions">Sleeping Positions<a class="headerlink" href="#new_born-sleeping-sleeping-positions" title="Permanent link">¶</a></h2>
-<p>It is recommended to put the baby in the supine position when sleeping. However, there is a tendency for parents to be noncompliant with this recommendation through time<sup id="fnref:3"><a class="footnote-ref" href="#new_born-sleeping-fn:3">3</a></sup>. It is a reminder to all of us to be vigilant.</p>
+<p>It is recommended to put the baby in the supine position when sleeping. However, there is a tendency for parents to be noncompliant with this recommendation through time<sup id="fnref:4"><a class="footnote-ref" href="#new_born-sleeping-fn:4">4</a></sup>. It is a reminder to all of us to be vigilant.</p>
 <p><vegachart style='width: 100%'  class="vegalite">{
   "description": "Sleeping Positions Survey from the Infant Feeding Practices Study II",
   "data": {
@@ -2991,14 +3123,14 @@
   }
 }</vegachart></p>
 <blockquote>
-<p>Sleeping positions survey from Hauck et al. 2008 <sup id="fnref2:3"><a class="footnote-ref" href="#new_born-sleeping-fn:3">3</a></sup></p>
+<p>Sleeping positions survey from Hauck et al. 2008 <sup id="fnref2:4"><a class="footnote-ref" href="#new_born-sleeping-fn:4">4</a></sup></p>
 </blockquote>
 <details class="info">
 <summary>Infant Feeding Practice Study (IFPS)</summary>
 <p>CDC. Infant Feeding Practice Study (IFPS). Breastfeeding Data. 2025.<a href="https://www.cdc.gov/breastfeeding-data/studies/methods-results-ifps.html">https://www.cdc.gov/breastfeeding-data/studies/methods-results-ifps.html</a> (accessed 10 May2025).</p>
 </details>
 <h2 id="new_born-sleeping-co-sleeping">Co-Sleeping<a class="headerlink" href="#new_born-sleeping-co-sleeping" title="Permanent link">¶</a></h2>
-<p>There are pros and cons of co-sleeping<sup id="fnref:4"><a class="footnote-ref" href="#new_born-sleeping-fn:4">4</a></sup>. The following table is a summary of the arguments mentioned in Sadeh et al. 2010:</p>
+<p>There are pros and cons of co-sleeping<sup id="fnref:5"><a class="footnote-ref" href="#new_born-sleeping-fn:5">5</a></sup>. The following table is a summary of the arguments mentioned in Sadeh et al. 2010:</p>
 <table>
 <thead>
 <tr>
@@ -3038,9 +3170,9 @@
 <h2 id="new_born-sleeping-parental-intervention">Parental Intervention<a class="headerlink" href="#new_born-sleeping-parental-intervention" title="Permanent link">¶</a></h2>
 <blockquote>
 <p>... excessive active physical comforting combined with reduced encouragement of infant’s autonomy was associated with infant sleeping problems.</p>
-<p>— Sadeh et al. 2010 <sup id="fnref3:4"><a class="footnote-ref" href="#new_born-sleeping-fn:4">4</a></sup></p>
+<p>— Sadeh et al. 2010 <sup id="fnref3:5"><a class="footnote-ref" href="#new_born-sleeping-fn:5">5</a></sup></p>
 </blockquote>
-<p>Research indicates that parents should encouraging independence and self-soothing to improve the sleep quality of the infant and also the wellbeing of the parents<sup id="fnref2:4"><a class="footnote-ref" href="#new_born-sleeping-fn:4">4</a></sup>.</p>
+<p>Research indicates that parents should encouraging independence and self-soothing to improve the sleep quality of the infant and also the wellbeing of the parents<sup id="fnref2:5"><a class="footnote-ref" href="#new_born-sleeping-fn:5">5</a></sup>.</p>
 <h2 id="new_born-sleeping-bed">Bed<a class="headerlink" href="#new_born-sleeping-bed" title="Permanent link">¶</a></h2>
 <div class="admonition tip">
 <p>We use this <a href="#products-maxi_cosi_iora_air_bed">Maxi Cosi Iora Air</a> bed for the baby. We move it to the living room during the day and to the bedroom at night.</p>
@@ -3067,10 +3199,13 @@
 <p>Scher MS. <a href="https://doi.org/10.1016/j.sleep.2007.08.014">Ontogeny of EEG-sleep from neonatal through infancy periods</a>. <em>Sleep medicine</em> 2008; <strong>9</strong>: 615–636.&#160;<a class="footnote-backref" href="#new_born-sleeping-fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#new_born-sleeping-fnref2:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="new_born-sleeping-fn:3">
-<p>Hauck FR, Signore C, Fein SB, Raju TNK. <a href="https://doi.org/10.1542/peds.2008-1315o">Infant sleeping arrangements and practices during the first year of life</a>. <em>Pediatrics</em> 2008; <strong>122 Suppl 2</strong>: S113–20.&#160;<a class="footnote-backref" href="#new_born-sleeping-fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#new_born-sleeping-fnref2:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p>Parmelee AH Jr, Wenner WH, Schulz HR. <a href="https://doi.org/10.1016/s0022-3476(64)80291-2">Infant sleep patterns: From birth to 16 weeks of age</a>. <em>The journal of pediatrics</em> 1964; <strong>65</strong>: 576–582.&#160;<a class="footnote-backref" href="#new_born-sleeping-fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="new_born-sleeping-fn:4">
-<p>Sadeh A, Tikotzky L, Scher A. <a href="https://doi.org/10.1016/j.smrv.2009.05.003">Parenting and infant sleep</a>. <em>Sleep medicine reviews</em> 2010; <strong>14</strong>: 89–96.&#160;<a class="footnote-backref" href="#new_born-sleeping-fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#new_born-sleeping-fnref2:4" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#new_born-sleeping-fnref3:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<p>Hauck FR, Signore C, Fein SB, Raju TNK. <a href="https://doi.org/10.1542/peds.2008-1315o">Infant sleeping arrangements and practices during the first year of life</a>. <em>Pediatrics</em> 2008; <strong>122 Suppl 2</strong>: S113–20.&#160;<a class="footnote-backref" href="#new_born-sleeping-fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#new_born-sleeping-fnref2:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="new_born-sleeping-fn:5">
+<p>Sadeh A, Tikotzky L, Scher A. <a href="https://doi.org/10.1016/j.smrv.2009.05.003">Parenting and infant sleep</a>. <em>Sleep medicine reviews</em> 2010; <strong>14</strong>: 89–96.&#160;<a class="footnote-backref" href="#new_born-sleeping-fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a><a class="footnote-backref" href="#new_born-sleeping-fnref2:5" title="Jump back to footnote 5 in the text">&#8617;</a><a class="footnote-backref" href="#new_born-sleeping-fnref3:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div></section><section class="print-page" id="new_born-outdoor_and_traveling"><h1 id="new_born-outdoor_and_traveling-outdoor-and-traveling">Outdoor and Traveling<a class="headerlink" href="#new_born-outdoor_and_traveling-outdoor-and-traveling" title="Permanent link">¶</a></h1>
