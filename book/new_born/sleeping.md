@@ -24,7 +24,7 @@ Durations of different sleep stages may vary. See the figure below for an exampl
     An idea would be that we only put down the baby 20min if she/he falls asleep in our arms. This would be a safe bet that the baby is not in a transitional sleep stage. But I didn't find enough data to support this idea only the above EEG sample.
 
 
-## Sleeping Length
+## Sleeping Hours
 
 There is not much sleeping length study for new born infants. We found a research paper Parmelee et al. 1964 that collected data of sleeping hours per day of 46 new born infants. The following tables and visualizations are based on their table 2[@Parmelee1964-oc]. We observe a decrease in sleeping hours per day and an increase in the longest sleep duration. The trend is visualized below.
 
