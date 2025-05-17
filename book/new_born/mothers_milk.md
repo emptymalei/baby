@@ -1,5 +1,11 @@
 # Mother's Milk
 
+
+## Consumption of Mother's Milk
+
+Infants usually consume about 0.5 kg/day of mother's milk for the first month and gradually grow to roughly 0.8 kg/day in the fourth month[@da-Costa2010-bk].
+
+
 ## Storing Mother's Milk
 
 At room temperature (~ 25°C), up to 4 hours[^cdc_breast_milk][^nhs_breast_milk]. CDC provides a nice info-graphic for storing breast milk[^cdc_storage_info].
