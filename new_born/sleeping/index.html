@@ -2495,7 +2495,199 @@
 <p>An idea would be that we only put down the baby 20min if she/he falls asleep in our arms. This would be a safe bet that the baby is not in a transitional sleep stage. But I didn't find enough data to support this idea only the above EEG sample.</p>
 </div>
 <h2 id="sleeping-length">Sleeping Length<a class="headerlink" href="#sleeping-length" title="Permanent link">¶</a></h2>
-<p>There is not much sleeping length study for new born infants. We found a research paper Parmelee et al. 1964 that collected data of sleeping hours per day of 46 new born infants. The following table is a recreation of their table 2<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>.</p>
+<p>There is not much sleeping length study for new born infants. We found a research paper Parmelee et al. 1964 that collected data of sleeping hours per day of 46 new born infants. The following tables and visualizations are based on their table 2<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>. We observe a decrease in sleeping hours per day and an increase in the longest sleep duration. The trend is visualized below.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 17H7v-7h2zm4 0h-2V7h2zm4 0h-2v-4h2zm2 2H5V5h14v14.1M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2"/></svg></span> Sleeping Hours Per Day</label><label for="__tabbed_1_2">Longest Sleep Duration</label><label for="__tabbed_1_3">Daily Longest Wakefulness</label><label for="__tabbed_1_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m0 4v3h4V7zm6 0v3h4V7zm10 3V7h-4v3zM4 12v3h4v-3zm0 8h4v-3H4zm6-8v3h4v-3zm0 8h4v-3h-4zm10 0v-3h-4v3zm0-8h-4v3h4z"/></svg></span> Data Table</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>The following chart shows the average total daily sleep (hours) and the standard deviation (error bars) of the data.</p>
+<p><vegachart style='width: 100%'  class="vegalite">{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Sleeping Hours Per Day from Parmelee et al. 1964",
+  "data": {
+    "values": [
+      { "age_weeks": 1, "mean_sleep": 16.32, "sd_sleep": 1.72 },
+      { "age_weeks": 2, "mean_sleep": 16.25, "sd_sleep": 1.60 },
+      { "age_weeks": 4, "mean_sleep": 15.43, "sd_sleep": 1.60 },
+      { "age_weeks": 8, "mean_sleep": 15.42, "sd_sleep": 1.70 },
+      { "age_weeks": 12, "mean_sleep": 15.11, "sd_sleep": 1.48 },
+      { "age_weeks": 16, "mean_sleep": 14.87, "sd_sleep": 1.39 }
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "datum.mean_sleep - datum.sd_sleep",
+      "as": "lower_sleep"
+    },
+    {
+      "calculate": "datum.mean_sleep + datum.sd_sleep",
+      "as": "upper_sleep"
+    }
+  ],
+  "layer": [
+    {
+      "mark": "errorbar",
+      "encoding": {
+        "y": {
+          "field": "upper_sleep",
+          "type": "quantitative",
+          "scale": {"zero": false},
+          "title": "Average Total Daily Sleep (hours)"
+        },
+        "y2": { "field": "lower_sleep" },
+        "x": {
+          "field": "age_weeks",
+          "type": "quantitative",
+          "title": "Age (weeks)"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "black"
+      },
+      "encoding": {
+        "y": {
+          "field": "mean_sleep",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "age_weeks",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}</vegachart></p>
+</div>
+<div class="tabbed-block">
+<p>The following chart shows the average daily longest sleep (hours) and the standard deviation (error bars) of the data.</p>
+<p><vegachart style='width: 100%'  class="vegalite">  {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Average daily longest sleep of infants with standard deviation as error bars.",
+  "data": {
+    "values": [
+      { "age_weeks": 1, "mean_longest_sleep": 4.08, "sd_longest_sleep": 0.67 },
+      { "age_weeks": 2, "mean_longest_sleep": 4.41, "sd_longest_sleep": 0.95 },
+      { "age_weeks": 4, "mean_longest_sleep": 4.62, "sd_longest_sleep": 1.02 },
+      { "age_weeks": 8, "mean_longest_sleep": 6.47, "sd_longest_sleep": 1.42 },
+      { "age_weeks": 12, "mean_longest_sleep": 7.67, "sd_longest_sleep": 1.69 },
+      { "age_weeks": 16, "mean_longest_sleep": 8.48, "sd_longest_sleep": 1.69 }
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "datum.mean_longest_sleep - datum.sd_longest_sleep",
+      "as": "lower_longest_sleep"
+    },
+    {
+      "calculate": "datum.mean_longest_sleep + datum.sd_longest_sleep",
+      "as": "upper_longest_sleep"
+    }
+  ],
+  "layer": [
+    {
+      "mark": "errorbar",
+      "encoding": {
+        "y": {
+          "field": "upper_longest_sleep",
+          "type": "quantitative",
+          "scale": {"zero": false},
+          "title": "Average Daily Longest Sleep (hours)"
+        },
+        "y2": { "field": "lower_longest_sleep" },
+        "x": {
+          "field": "age_weeks",
+          "type": "quantitative",
+          "title": "Age (weeks)"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "black"
+      },
+      "encoding": {
+        "y": {
+          "field": "mean_longest_sleep",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "age_weeks",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}</vegachart></p>
+</div>
+<div class="tabbed-block">
+<p>The following chart shows the average daily longest wakefulness (hours) and the standard deviation (error bars) of the data.</p>
+<p><vegachart style='width: 100%'  class="vegalite">{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Average daily longest wakefulness of infants with standard deviation as error bars.",
+  "data": {
+    "values": [
+      { "age_weeks": 1, "mean_longest_wake": 2.39, "sd_longest_wake": 0.84 },
+      { "age_weeks": 2, "mean_longest_wake": 2.61, "sd_longest_wake": 0.89 },
+      { "age_weeks": 4, "mean_longest_wake": 3.08, "sd_longest_wake": 1.04 },
+      { "age_weeks": 8, "mean_longest_wake": 3.15, "sd_longest_wake": 1.10 },
+      { "age_weeks": 12, "mean_longest_wake": 3.41, "sd_longest_wake": 0.92 },
+      { "age_weeks": 16, "mean_longest_wake": 3.56, "sd_longest_wake": 1.05 }
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "datum.mean_longest_wake - datum.sd_longest_wake",
+      "as": "lower_longest_wake"
+    },
+    {
+      "calculate": "datum.mean_longest_wake + datum.sd_longest_wake",
+      "as": "upper_longest_wake"
+    }
+  ],
+  "layer": [
+    {
+      "mark": "errorbar",
+      "encoding": {
+        "y": {
+          "field": "upper_longest_wake",
+          "type": "quantitative",
+          "scale": { "zero": false },
+          "title": "Average Daily Longest Wakefulness (hours)"
+        },
+        "y2": { "field": "lower_longest_wake" },
+        "x": {
+          "field": "age_weeks",
+          "type": "quantitative",
+          "title": "Age (weeks)"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "black"
+      },
+      "encoding": {
+        "y": {
+          "field": "mean_longest_wake",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "age_weeks",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}</vegachart></p>
+</div>
+<div class="tabbed-block">
 <table>
 <thead>
 <tr>
@@ -2565,67 +2757,9 @@
 </tr>
 </tbody>
 </table>
-<p>We observe a decrease in sleeping hours per day and an increase in the longest sleep duration. The trend is visualized below.</p>
-<p><vegachart style='width: 100%'  class="vegalite">{
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Sleeping Hours Per Day from Parmelee et al. 1964",
-  "data": {
-    "values": [
-      { "age_weeks": 1, "mean_sleep": 16.32, "sd_sleep": 1.72 },
-      { "age_weeks": 2, "mean_sleep": 16.25, "sd_sleep": 1.60 },
-      { "age_weeks": 4, "mean_sleep": 15.43, "sd_sleep": 1.60 },
-      { "age_weeks": 8, "mean_sleep": 15.42, "sd_sleep": 1.70 },
-      { "age_weeks": 12, "mean_sleep": 15.11, "sd_sleep": 1.48 },
-      { "age_weeks": 16, "mean_sleep": 14.87, "sd_sleep": 1.39 }
-    ]
-  },
-  "transform": [
-    {
-      "calculate": "datum.mean_sleep - datum.sd_sleep/2",
-      "as": "lower_sleep"
-    },
-    {
-      "calculate": "datum.mean_sleep + datum.sd_sleep/2",
-      "as": "upper_sleep"
-    }
-  ],
-  "layer": [
-    {
-      "mark": "errorbar",
-      "encoding": {
-        "y": {
-          "field": "upper_sleep",
-          "type": "quantitative",
-          "scale": {"zero": false},
-          "title": "Average Total Daily Sleep (hours)"
-        },
-        "y2": { "field": "lower_sleep" },
-        "x": {
-          "field": "age_weeks",
-          "type": "quantitative",
-          "title": "Age (weeks)"
-        }
-      }
-    },
-    {
-      "mark": {
-        "type": "point",
-        "filled": true,
-        "color": "black"
-      },
-      "encoding": {
-        "y": {
-          "field": "mean_sleep",
-          "type": "quantitative"
-        },
-        "x": {
-          "field": "age_weeks",
-          "type": "quantitative"
-        }
-      }
-    }
-  ]
-}</vegachart></p>
+</div>
+</div>
+</div>
 <h2 id="sleeping-positions">Sleeping Positions<a class="headerlink" href="#sleeping-positions" title="Permanent link">¶</a></h2>
 <p>It is recommended to put the baby in the supine position when sleeping. However, there is a tendency for parents to be noncompliant with this recommendation through time<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>. It is a reminder to all of us to be vigilant.</p>
 <p><vegachart style='width: 100%'  class="vegalite">{
@@ -2752,7 +2886,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 17, 2025 15:11:18">May 17, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 17, 2025 15:44:41">May 17, 2025</span>
   </span>
 
     
