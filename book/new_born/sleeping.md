@@ -26,82 +26,221 @@ Durations of different sleep stages may vary. See the figure below for an exampl
 
 ## Sleeping Length
 
-There is not much sleeping length study for new born infants. We found a research paper Parmelee et al. 1964 that collected data of sleeping hours per day of 46 new born infants. The following table is a recreation of their table 2[@Parmelee1964-oc].
-
-| Age in weeks | Average total daily sleep (hours) | S.D. | Average daily longest sleep (hours) | S.D. | Average daily longest wakefulness (hours) | S.D. |
-|--------------|-----------------------------------|------|-------------------------------------|------|-------------------------------------------|------|
-| 1            | 16.32                             | 1.72 | 4.08                                | 0.67 | 2.39                                      | 0.84 |
-| 2            | 16.25                             | 1.60 | 4.41                                | 0.95 | 2.61                                      | 0.89 |
-| 4            | 15.43                             | 1.60 | 4.62                                | 1.02 | 3.08                                      | 1.04 |
-| 8            | 15.42                             | 1.70 | 6.47                                | 1.42 | 3.15                                      | 1.10 |
-| 12           | 15.11                             | 1.48 | 7.67                                | 1.69 | 3.41                                      | 0.92 |
-| 16           | 14.87                             | 1.39 | 8.48                                | 1.69 | 3.56                                      | 1.05 |
+There is not much sleeping length study for new born infants. We found a research paper Parmelee et al. 1964 that collected data of sleeping hours per day of 46 new born infants. The following tables and visualizations are based on their table 2[@Parmelee1964-oc]. We observe a decrease in sleeping hours per day and an increase in the longest sleep duration. The trend is visualized below.
 
 
-We observe a decrease in sleeping hours per day and an increase in the longest sleep duration. The trend is visualized below.
+=== ":material-chart-box-outline: Sleeping Hours Per Day"
 
-```vegalite
-{
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Sleeping Hours Per Day from Parmelee et al. 1964",
-  "data": {
-    "values": [
-      { "age_weeks": 1, "mean_sleep": 16.32, "sd_sleep": 1.72 },
-      { "age_weeks": 2, "mean_sleep": 16.25, "sd_sleep": 1.60 },
-      { "age_weeks": 4, "mean_sleep": 15.43, "sd_sleep": 1.60 },
-      { "age_weeks": 8, "mean_sleep": 15.42, "sd_sleep": 1.70 },
-      { "age_weeks": 12, "mean_sleep": 15.11, "sd_sleep": 1.48 },
-      { "age_weeks": 16, "mean_sleep": 14.87, "sd_sleep": 1.39 }
-    ]
-  },
-  "transform": [
+    The following chart shows the average total daily sleep (hours) and the standard deviation (error bars) of the data.
+
+
+    ```vegalite
     {
-      "calculate": "datum.mean_sleep - datum.sd_sleep/2",
-      "as": "lower_sleep"
-    },
-    {
-      "calculate": "datum.mean_sleep + datum.sd_sleep/2",
-      "as": "upper_sleep"
-    }
-  ],
-  "layer": [
-    {
-      "mark": "errorbar",
-      "encoding": {
-        "y": {
-          "field": "upper_sleep",
-          "type": "quantitative",
-          "scale": {"zero": false},
-          "title": "Average Total Daily Sleep (hours)"
-        },
-        "y2": { "field": "lower_sleep" },
-        "x": {
-          "field": "age_weeks",
-          "type": "quantitative",
-          "title": "Age (weeks)"
-        }
-      }
-    },
-    {
-      "mark": {
-        "type": "point",
-        "filled": true,
-        "color": "black"
+      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "description": "Sleeping Hours Per Day from Parmelee et al. 1964",
+      "data": {
+        "values": [
+          { "age_weeks": 1, "mean_sleep": 16.32, "sd_sleep": 1.72 },
+          { "age_weeks": 2, "mean_sleep": 16.25, "sd_sleep": 1.60 },
+          { "age_weeks": 4, "mean_sleep": 15.43, "sd_sleep": 1.60 },
+          { "age_weeks": 8, "mean_sleep": 15.42, "sd_sleep": 1.70 },
+          { "age_weeks": 12, "mean_sleep": 15.11, "sd_sleep": 1.48 },
+          { "age_weeks": 16, "mean_sleep": 14.87, "sd_sleep": 1.39 }
+        ]
       },
-      "encoding": {
-        "y": {
-          "field": "mean_sleep",
-          "type": "quantitative"
+      "transform": [
+        {
+          "calculate": "datum.mean_sleep - datum.sd_sleep",
+          "as": "lower_sleep"
         },
-        "x": {
-          "field": "age_weeks",
-          "type": "quantitative"
+        {
+          "calculate": "datum.mean_sleep + datum.sd_sleep",
+          "as": "upper_sleep"
         }
-      }
+      ],
+      "layer": [
+        {
+          "mark": "errorbar",
+          "encoding": {
+            "y": {
+              "field": "upper_sleep",
+              "type": "quantitative",
+              "scale": {"zero": false},
+              "title": "Average Total Daily Sleep (hours)"
+            },
+            "y2": { "field": "lower_sleep" },
+            "x": {
+              "field": "age_weeks",
+              "type": "quantitative",
+              "title": "Age (weeks)"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "filled": true,
+            "color": "black"
+          },
+          "encoding": {
+            "y": {
+              "field": "mean_sleep",
+              "type": "quantitative"
+            },
+            "x": {
+              "field": "age_weeks",
+              "type": "quantitative"
+            }
+          }
+        }
+      ]
     }
-  ]
-}
-```
+    ```
+
+=== "Longest Sleep Duration"
+
+    The following chart shows the average daily longest sleep (hours) and the standard deviation (error bars) of the data.
+
+    ```vegalite
+      {
+      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "description": "Average daily longest sleep of infants with standard deviation as error bars.",
+      "data": {
+        "values": [
+          { "age_weeks": 1, "mean_longest_sleep": 4.08, "sd_longest_sleep": 0.67 },
+          { "age_weeks": 2, "mean_longest_sleep": 4.41, "sd_longest_sleep": 0.95 },
+          { "age_weeks": 4, "mean_longest_sleep": 4.62, "sd_longest_sleep": 1.02 },
+          { "age_weeks": 8, "mean_longest_sleep": 6.47, "sd_longest_sleep": 1.42 },
+          { "age_weeks": 12, "mean_longest_sleep": 7.67, "sd_longest_sleep": 1.69 },
+          { "age_weeks": 16, "mean_longest_sleep": 8.48, "sd_longest_sleep": 1.69 }
+        ]
+      },
+      "transform": [
+        {
+          "calculate": "datum.mean_longest_sleep - datum.sd_longest_sleep",
+          "as": "lower_longest_sleep"
+        },
+        {
+          "calculate": "datum.mean_longest_sleep + datum.sd_longest_sleep",
+          "as": "upper_longest_sleep"
+        }
+      ],
+      "layer": [
+        {
+          "mark": "errorbar",
+          "encoding": {
+            "y": {
+              "field": "upper_longest_sleep",
+              "type": "quantitative",
+              "scale": {"zero": false},
+              "title": "Average Daily Longest Sleep (hours)"
+            },
+            "y2": { "field": "lower_longest_sleep" },
+            "x": {
+              "field": "age_weeks",
+              "type": "quantitative",
+              "title": "Age (weeks)"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "filled": true,
+            "color": "black"
+          },
+          "encoding": {
+            "y": {
+              "field": "mean_longest_sleep",
+              "type": "quantitative"
+            },
+            "x": {
+              "field": "age_weeks",
+              "type": "quantitative"
+            }
+          }
+        }
+      ]
+    }
+    ```
+
+=== "Daily Longest Wakefulness"
+
+    The following chart shows the average daily longest wakefulness (hours) and the standard deviation (error bars) of the data.
+
+    ```vegalite
+    {
+      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "description": "Average daily longest wakefulness of infants with standard deviation as error bars.",
+      "data": {
+        "values": [
+          { "age_weeks": 1, "mean_longest_wake": 2.39, "sd_longest_wake": 0.84 },
+          { "age_weeks": 2, "mean_longest_wake": 2.61, "sd_longest_wake": 0.89 },
+          { "age_weeks": 4, "mean_longest_wake": 3.08, "sd_longest_wake": 1.04 },
+          { "age_weeks": 8, "mean_longest_wake": 3.15, "sd_longest_wake": 1.10 },
+          { "age_weeks": 12, "mean_longest_wake": 3.41, "sd_longest_wake": 0.92 },
+          { "age_weeks": 16, "mean_longest_wake": 3.56, "sd_longest_wake": 1.05 }
+        ]
+      },
+      "transform": [
+        {
+          "calculate": "datum.mean_longest_wake - datum.sd_longest_wake",
+          "as": "lower_longest_wake"
+        },
+        {
+          "calculate": "datum.mean_longest_wake + datum.sd_longest_wake",
+          "as": "upper_longest_wake"
+        }
+      ],
+      "layer": [
+        {
+          "mark": "errorbar",
+          "encoding": {
+            "y": {
+              "field": "upper_longest_wake",
+              "type": "quantitative",
+              "scale": { "zero": false },
+              "title": "Average Daily Longest Wakefulness (hours)"
+            },
+            "y2": { "field": "lower_longest_wake" },
+            "x": {
+              "field": "age_weeks",
+              "type": "quantitative",
+              "title": "Age (weeks)"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "filled": true,
+            "color": "black"
+          },
+          "encoding": {
+            "y": {
+              "field": "mean_longest_wake",
+              "type": "quantitative"
+            },
+            "x": {
+              "field": "age_weeks",
+              "type": "quantitative"
+            }
+          }
+        }
+      ]
+    }
+    ```
+
+=== ":material-table-large: Data Table"
+
+    | Age in weeks | Average total daily sleep (hours) | S.D. | Average daily longest sleep (hours) | S.D. | Average daily longest wakefulness (hours) | S.D. |
+    |--------------|-----------------------------------|------|-------------------------------------|------|-------------------------------------------|------|
+    | 1            | 16.32                             | 1.72 | 4.08                                | 0.67 | 2.39                                      | 0.84 |
+    | 2            | 16.25                             | 1.60 | 4.41                                | 0.95 | 2.61                                      | 0.89 |
+    | 4            | 15.43                             | 1.60 | 4.62                                | 1.02 | 3.08                                      | 1.04 |
+    | 8            | 15.42                             | 1.70 | 6.47                                | 1.42 | 3.15                                      | 1.10 |
+    | 12           | 15.11                             | 1.48 | 7.67                                | 1.69 | 3.41                                      | 0.92 |
+    | 16           | 14.87                             | 1.39 | 8.48                                | 1.69 | 3.56                                      | 1.05 |
 
 
 
