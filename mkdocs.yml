@@ -113,8 +113,8 @@ plugins:
   #       - notebooks/tree_darts
   - tags
   - meta
-  - privacy:
-      enabled: !ENV [CI, false]
+  # - privacy:
+  #     enabled: !ENV [CI, false]
   - bibtex:
       bib_dir: "book/assets/references"
       csl_file: "book/assets/csl/nature-publishing-group-vancouver.csl" # https://github.com/citation-style-language/styles/blob/master/nature-publishing-group-vancouver.csl
