@@ -243,6 +243,8 @@ There is not much sleeping length study for new born infants. We found a researc
     | 16           | 14.87                             | 1.39 | 8.48                                | 1.69 | 3.56                                      | 1.05 |
 
 
+Apart from changes in the average hours of sleeping, the authors also found that the day sleep hours drops and night sleep hours increase with age [@Parmelee1964-oc]. It is good news for parents who experiences sleep deprivation in the first few weeks.
+
 
 ## Sleeping Positions
 
