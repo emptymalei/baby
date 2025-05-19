@@ -164,144 +164,168 @@
     },
     {
       "id": "27",
+      "name": "Ana Wiz Breastmilk Storage Bottles",
+      "symbolSize": 0,
+      "value": "/products/ana_wiz_breastmilk_storage_bottles/"
+    },
+    {
+      "id": "28",
       "name": "Neocate Infant",
       "symbolSize": 2,
       "value": "/products/neocate_infant/"
     },
     {
-      "id": "28",
+      "id": "29",
       "name": "Vienna Breastfeeding Donut",
       "symbolSize": 1,
       "value": "/products/vienna_breastfeeding_donut/"
     },
     {
-      "id": "29",
+      "id": "30",
       "name": "Nobamed Pflegetuch",
       "symbolSize": 1,
       "value": "/products/nobamed_pflegetuch/"
     },
     {
-      "id": "30",
+      "id": "31",
       "name": "PoeticEHome Soft Dry Wipes",
       "symbolSize": 1,
       "value": "/products/poeticehome_soft_dry_wipes/"
     },
     {
-      "id": "31",
+      "id": "32",
       "name": "Chicco Nappy Bin",
       "symbolSize": 1,
       "value": "/products/chicco_nappy_bin/"
     },
     {
-      "id": "32",
+      "id": "33",
       "name": "Ikea Standing Desk",
       "symbolSize": 1,
       "value": "/products/ikea_standing_desk/"
     },
     {
-      "id": "33",
+      "id": "34",
       "name": "Withings Thermo",
       "symbolSize": 0,
       "value": "/products/withings_thermo/"
     },
     {
-      "id": "34",
+      "id": "35",
       "name": "Withings Body Smart",
       "symbolSize": 1,
       "value": "/products/withings_body_smart/"
     },
     {
-      "id": "35",
-      "name": "Boba Baby Wrap",
-      "symbolSize": 0,
-      "value": "/products/boba_baby_wrap/"
-    },
-    {
       "id": "36",
-      "name": "Bugaboo Fox 5",
-      "symbolSize": 1,
-      "value": "/products/bugaboo_fox_5/"
+      "name": "LEVOIT Air Purifier",
+      "symbolSize": 0,
+      "value": "/products/levoit_air_purifier/"
     },
     {
       "id": "37",
-      "name": "Ergobaby Carrier",
+      "name": "Love to Dream Swaddles",
       "symbolSize": 0,
-      "value": "/products/ergobaby_omni_deluxe_all-in-one/"
+      "value": "/products/love_to_dream_swaddles/"
     },
     {
       "id": "38",
-      "name": "Peak Design Tech Pouch",
-      "symbolSize": 1,
-      "value": "/products/peak_design_tech_pouch/"
-    },
-    {
-      "id": "39",
-      "name": "Klean Kanteen Water Bottle",
-      "symbolSize": 1,
-      "value": "/products/klean_kanteen_bottle/"
-    },
-    {
-      "id": "40",
-      "name": "Bonding Top",
-      "symbolSize": 1,
-      "value": "/products/bonding_top/"
-    },
-    {
-      "id": "41",
-      "name": "Cotabaty Baby Night Light",
-      "symbolSize": 1,
-      "value": "/products/cotabaty_baby_night_light/"
-    },
-    {
-      "id": "42",
-      "name": "Stokke Tripp Trapp",
-      "symbolSize": 0,
-      "value": "/products/stokke_tripp_trapp/"
-    },
-    {
-      "id": "43",
-      "name": "Zirkulin Bio Flohsamen Schalen",
-      "symbolSize": 1,
-      "value": "/products/zirkulin_bio_flohsamen_schalen/"
-    },
-    {
-      "id": "44",
       "name": "Maxi Cosi Iora Air Bed",
       "symbolSize": 1,
       "value": "/products/maxi_cosi_iora_air_bed/"
     },
     {
+      "id": "39",
+      "name": "Boba Baby Wrap",
+      "symbolSize": 0,
+      "value": "/products/boba_baby_wrap/"
+    },
+    {
+      "id": "40",
+      "name": "Bugaboo Fox 5",
+      "symbolSize": 1,
+      "value": "/products/bugaboo_fox_5/"
+    },
+    {
+      "id": "41",
+      "name": "Ergobaby Carrier",
+      "symbolSize": 0,
+      "value": "/products/ergobaby_omni_deluxe_all-in-one/"
+    },
+    {
+      "id": "42",
+      "name": "Peak Design Tech Pouch",
+      "symbolSize": 1,
+      "value": "/products/peak_design_tech_pouch/"
+    },
+    {
+      "id": "43",
+      "name": "Klean Kanteen Water Bottle",
+      "symbolSize": 1,
+      "value": "/products/klean_kanteen_bottle/"
+    },
+    {
+      "id": "44",
+      "name": "Bonding Top",
+      "symbolSize": 1,
+      "value": "/products/bonding_top/"
+    },
+    {
       "id": "45",
+      "name": "Cotabaty Baby Night Light",
+      "symbolSize": 1,
+      "value": "/products/cotabaty_baby_night_light/"
+    },
+    {
+      "id": "46",
+      "name": "Stokke Tripp Trapp",
+      "symbolSize": 0,
+      "value": "/products/stokke_tripp_trapp/"
+    },
+    {
+      "id": "47",
+      "name": "Zirkulin Bio Flohsamen Schalen",
+      "symbolSize": 1,
+      "value": "/products/zirkulin_bio_flohsamen_schalen/"
+    },
+    {
+      "id": "48",
+      "name": "Ellie Baby Monitor",
+      "symbolSize": 0,
+      "value": "/products/ellie_baby_monitor/"
+    },
+    {
+      "id": "49",
       "name": "St. Elisabeth-Krankenhaus K\u00f6ln-Hohenlind",
       "symbolSize": 4,
       "value": "/facilities/koeln_hohenlind/"
     },
     {
-      "id": "46",
+      "id": "50",
       "name": "Roadmap",
       "symbolSize": 1,
       "value": "/meta/roadmap/"
     },
     {
-      "id": "47",
+      "id": "51",
       "name": "References",
       "symbolSize": 0,
       "value": "/meta/references/"
     },
     {
-      "id": "48",
+      "id": "52",
       "name": "Changelog",
       "symbolSize": 1,
       "value": "/meta/changelog/"
     },
     {
-      "id": "49",
+      "id": "53",
       "name": "Tags",
       "symbolSize": 0,
       "value": "/meta/tags/"
     },
     {
-      "id": "50",
+      "id": "54",
       "name": "Supplementary",
       "symbolSize": 0,
       "value": "/meta/supplementary/"
@@ -322,7 +346,7 @@
     },
     {
       "source": "6",
-      "target": "45"
+      "target": "49"
     },
     {
       "source": "5",
@@ -338,7 +362,7 @@
     },
     {
       "source": "5",
-      "target": "36"
+      "target": "40"
     },
     {
       "source": "5",
@@ -350,19 +374,19 @@
     },
     {
       "source": "5",
-      "target": "40"
+      "target": "44"
     },
     {
       "source": "5",
-      "target": "39"
+      "target": "43"
     },
     {
       "source": "7",
-      "target": "45"
+      "target": "49"
     },
     {
-      "source": "46",
-      "target": "48"
+      "source": "50",
+      "target": "52"
     },
     {
       "source": "8",
@@ -394,7 +418,7 @@
     },
     {
       "source": "11",
-      "target": "31"
+      "target": "32"
     },
     {
       "source": "11",
@@ -414,11 +438,11 @@
     },
     {
       "source": "9",
-      "target": "45"
+      "target": "49"
     },
     {
       "source": "9",
-      "target": "28"
+      "target": "29"
     },
     {
       "source": "9",
@@ -434,19 +458,19 @@
     },
     {
       "source": "9",
-      "target": "27"
+      "target": "28"
     },
     {
       "source": "14",
+      "target": "42"
+    },
+    {
+      "source": "12",
       "target": "38"
     },
     {
       "source": "12",
-      "target": "44"
-    },
-    {
-      "source": "12",
-      "target": "41"
+      "target": "45"
     },
     {
       "source": "1",
@@ -458,23 +482,23 @@
     },
     {
       "source": "3",
-      "target": "34"
+      "target": "35"
     },
     {
       "source": "3",
-      "target": "43"
+      "target": "47"
     },
     {
-      "source": "32",
+      "source": "33",
       "target": "11"
     },
     {
-      "source": "27",
-      "target": "45"
+      "source": "28",
+      "target": "49"
     },
     {
-      "source": "30",
-      "target": "29"
+      "source": "31",
+      "target": "30"
     }
   ]
 }
