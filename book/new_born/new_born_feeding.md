@@ -66,7 +66,7 @@ All are fine. We decided to go with the [[products/neocate_infant|Neocate Infant
 
 ### Vitamin D
 
-It is well known that the deficit of Vitamin D in [[new_born/mothers_milk|Mother's Milk]] is highly prevalent [@Butte2002-cc;Kimball2008-bx].
+It is well known that the deficit of Vitamin D in [[new_born/mothers_milk|Mother's Milk]] is highly prevalent [@Butte2002-cc][@Kimball2008-bx].
 
 !!! note "Prescribed with Vitamin D"
 
