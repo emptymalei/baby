@@ -62,6 +62,17 @@ We also use formula milk. We have tried the following brands:
 All are fine. We decided to go with the [[products/neocate_infant|Neocate Infant]] because our hospital provided it and our baby liked it. Personally, we don't feel any difference between the three brands.
 
 
+## Supplements
+
+### Vitamin D
+
+It is well known that the deficit of Vitamin D in [[new_born/mothers_milk|Mother's Milk]] is highly prevalent [@Butte2002-cc;Kimball2008-bx].
+
+!!! note "Prescribed with Vitamin D"
+
+    In Germany, the pediatrician or the hospital will prescribe Vitamin D for your baby.
+
+
 ## Research Papers
 
 
