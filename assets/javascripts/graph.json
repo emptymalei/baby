@@ -57,13 +57,13 @@
     {
       "id": "9",
       "name": "New Born Feeding",
-      "symbolSize": 10,
+      "symbolSize": 11,
       "value": "/new_born/new_born_feeding/"
     },
     {
       "id": "10",
       "name": "Mother's Milk",
-      "symbolSize": 2,
+      "symbolSize": 3,
       "value": "/new_born/mothers_milk/"
     },
     {
@@ -459,6 +459,10 @@
     {
       "source": "9",
       "target": "28"
+    },
+    {
+      "source": "9",
+      "target": "10"
     },
     {
       "source": "14",
