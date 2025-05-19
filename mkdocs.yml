@@ -240,6 +240,7 @@ nav:
       - "Baby Brezza Bottle Washer Pro": products/baby_brezza_bottle_washer_pro.md
       - "Philips Avent Bottle": products/philips_avent_bottle.md
       - "Medela Symphony Milk Pump": products/medela_symphony.md
+      - "Ana Wiz Breastmilk Storage Bottles": products/ana_wiz_breastmilk_storage_bottles.md
       - "Neocate Infant": products/neocate_infant.md
       - "Vienna Breastfeeding Donut": products/vienna_breastfeeding_donut.md
       - "Nobamed Pflegetuch": products/nobamed_pflegetuch.md
@@ -248,6 +249,10 @@ nav:
       - "Ikea Standing Desk": products/ikea_standing_desk.md
       - "Withings Thermo": products/withings_thermo.md
       - "Withings Body Smart": products/withings_body_smart.md
+      - "LEVOIT Air Purifier": products/levoit_air_purifier.md
+    - "Sleeping":
+      - "Love to Dream Swaddles": products/love_to_dream_swaddles.md
+      - "Maxi Cosi Iora Air Bed": products/maxi_cosi_iora_air_bed.md
     - "Mobility":
       - "Boba Baby Wrap": products/boba_baby_wrap.md
       - "Bugaboo Fox 5": products/bugaboo_fox_5.md
@@ -259,7 +264,7 @@ nav:
       - "Cotabaty Baby Night Light": products/cotabaty_baby_night_light.md
       - "Stokke Tripp Trapp": products/stokke_tripp_trapp.md
       - "Zirkulin Bio Flohsamen Schalen": products/zirkulin_bio_flohsamen_schalen.md
-      - "Maxi Cosi Iora Air Bed": products/maxi_cosi_iora_air_bed.md
+      - "Ellie Baby Monitor": products/ellie_baby_monitor.md
   - "Facilities":
     - "St. Elisabeth-Krankenhaus Köln-Hohenlind": facilities/koeln_hohenlind.md
   - "About":
