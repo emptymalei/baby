@@ -69,7 +69,7 @@
     {
       "id": "11",
       "name": "Changing Table",
-      "symbolSize": 5,
+      "symbolSize": 6,
       "value": "/new_born/changing_table/"
     },
     {
@@ -224,108 +224,114 @@
     },
     {
       "id": "37",
+      "name": "reer Changing Table Heater",
+      "symbolSize": 1,
+      "value": "/products/reer_changing_table_heater/"
+    },
+    {
+      "id": "38",
       "name": "Love to Dream Swaddles",
       "symbolSize": 0,
       "value": "/products/love_to_dream_swaddles/"
     },
     {
-      "id": "38",
+      "id": "39",
       "name": "Maxi Cosi Iora Air Bed",
       "symbolSize": 1,
       "value": "/products/maxi_cosi_iora_air_bed/"
     },
     {
-      "id": "39",
+      "id": "40",
       "name": "Boba Baby Wrap",
       "symbolSize": 0,
       "value": "/products/boba_baby_wrap/"
     },
     {
-      "id": "40",
+      "id": "41",
       "name": "Bugaboo Fox 5",
       "symbolSize": 1,
       "value": "/products/bugaboo_fox_5/"
     },
     {
-      "id": "41",
+      "id": "42",
       "name": "Ergobaby Carrier",
       "symbolSize": 0,
       "value": "/products/ergobaby_omni_deluxe_all-in-one/"
     },
     {
-      "id": "42",
+      "id": "43",
       "name": "Peak Design Tech Pouch",
       "symbolSize": 1,
       "value": "/products/peak_design_tech_pouch/"
     },
     {
-      "id": "43",
+      "id": "44",
       "name": "Klean Kanteen Water Bottle",
       "symbolSize": 1,
       "value": "/products/klean_kanteen_bottle/"
     },
     {
-      "id": "44",
+      "id": "45",
       "name": "Bonding Top",
       "symbolSize": 1,
       "value": "/products/bonding_top/"
     },
     {
-      "id": "45",
+      "id": "46",
       "name": "Cotabaty Baby Night Light",
       "symbolSize": 1,
       "value": "/products/cotabaty_baby_night_light/"
     },
     {
-      "id": "46",
+      "id": "47",
       "name": "Stokke Tripp Trapp",
       "symbolSize": 0,
       "value": "/products/stokke_tripp_trapp/"
     },
     {
-      "id": "47",
+      "id": "48",
       "name": "Zirkulin Bio Flohsamen Schalen",
       "symbolSize": 1,
       "value": "/products/zirkulin_bio_flohsamen_schalen/"
     },
     {
-      "id": "48",
+      "id": "49",
       "name": "Ellie Baby Monitor",
       "symbolSize": 0,
       "value": "/products/ellie_baby_monitor/"
     },
     {
-      "id": "49",
+      "id": "50",
       "name": "St. Elisabeth-Krankenhaus K\u00f6ln-Hohenlind",
       "symbolSize": 4,
       "value": "/facilities/koeln_hohenlind/"
     },
     {
-      "id": "50",
+      "id": "51",
       "name": "Roadmap",
       "symbolSize": 1,
       "value": "/meta/roadmap/"
     },
     {
-      "id": "51",
+      "id": "52",
       "name": "References",
       "symbolSize": 0,
       "value": "/meta/references/"
     },
     {
-      "id": "52",
+      "id": "53",
       "name": "Changelog",
       "symbolSize": 1,
       "value": "/meta/changelog/"
     },
     {
-      "id": "53",
+      "id": "54",
       "name": "Tags",
       "symbolSize": 0,
       "value": "/meta/tags/"
     },
     {
-      "id": "54",
+      "id": "55",
       "name": "Supplementary",
       "symbolSize": 0,
       "value": "/meta/supplementary/"
@@ -346,7 +352,7 @@
     },
     {
       "source": "6",
-      "target": "49"
+      "target": "50"
     },
     {
       "source": "5",
@@ -362,7 +368,7 @@
     },
     {
       "source": "5",
-      "target": "40"
+      "target": "41"
     },
     {
       "source": "5",
@@ -374,19 +380,19 @@
     },
     {
       "source": "5",
-      "target": "44"
+      "target": "45"
     },
     {
       "source": "5",
-      "target": "43"
+      "target": "44"
     },
     {
       "source": "7",
-      "target": "49"
+      "target": "50"
     },
     {
-      "source": "50",
-      "target": "52"
+      "source": "51",
+      "target": "53"
     },
     {
       "source": "8",
@@ -429,6 +435,10 @@
       "target": "24"
     },
     {
+      "source": "11",
+      "target": "37"
+    },
+    {
       "source": "9",
       "target": "10"
     },
@@ -438,7 +448,7 @@
     },
     {
       "source": "9",
-      "target": "49"
+      "target": "50"
     },
     {
       "source": "9",
@@ -466,15 +476,15 @@
     },
     {
       "source": "14",
-      "target": "42"
+      "target": "43"
     },
     {
       "source": "12",
-      "target": "38"
+      "target": "39"
     },
     {
       "source": "12",
-      "target": "45"
+      "target": "46"
     },
     {
       "source": "1",
@@ -490,7 +500,7 @@
     },
     {
       "source": "3",
-      "target": "47"
+      "target": "48"
     },
     {
       "source": "33",
@@ -498,7 +508,7 @@
     },
     {
       "source": "28",
-      "target": "49"
+      "target": "50"
     },
     {
       "source": "31",
