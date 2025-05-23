@@ -30,3 +30,17 @@ We use the [[products/baby_brezza_bottle_washer_pro|Baby Brezza Bottle Washer Pr
     We have to put it in the kitchen due to limited space. Also we don't want to have any leakage on the parquet floor.
 
 ![Baby Brezza Bottle Washer Pro in Kitchen](assets/baby_brezza_washing_setup.png)
+
+
+## Changing Table Heater
+
+
+We use the [[products/reer_changing_table_heater|reer FeelWell 2-in-1 Nappy Changing Table Heater]].
+
+!!! tip "It heats up fast"
+
+    We did some random tests and it can raise the temperature from 24 to 25 in less than 1 minute.
+
+!!! tip "Make it Smart"
+
+    Combined with a smart plug, sensors and smart button, we made it easier to use.
