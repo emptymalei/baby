@@ -53,13 +53,13 @@ Washing bottles is a pain. Luckily [[products/baby_brezza_bottle_washer_pro|Baby
 
 ## Formula Milk
 
-We also use formula milk. We have tried the following brands:
+We also use formula milk. We have tried several brands and all are fine for our baby. We decided to go with the [[products/neocate_infant|Neocate Infant]] because our hospital provided it and our baby liked it. Personally, we don't feel any difference between the three brands.
 
-- [Aptamil](https://www.aptaclub.de/)
-- [Hipp](https://www.hipp.de/)
-- [Neocate](https://www.neocate.de/)
-
-All are fine. We decided to go with the [[products/neocate_infant|Neocate Infant]] because our hospital provided it and our baby liked it. Personally, we don't feel any difference between the three brands.
+| Formula | Easy to Make | Price | Note |
+| ------- | ---- | ----- | ----- |
+| [[products/aptimil_profortuna_duoadvance_pre]] | Yes. | Medium | Probably the most popular brand in Germany. Our baby is fine with it. |
+| [[products/neocate_infant]] | Yes. The milk is very smooth. | High. | We didn't even know this brand until the hospital told us that they use this one. The formula is very easy to make. |
+| [[products/hipp_pre_bio_combiotik]] | Liquid | Medium | Our midwife recommended this. |
 
 
 ## Supplements

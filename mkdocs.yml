@@ -234,14 +234,17 @@ nav:
       - "Google Drive": products/google_drive.md
       - "Baby Daybook App": products/baby_daybook.md
       - "Pathways.org": products/pathways_org.md
-    - "Feeding, Hygiene and Health":
-      - "HPA Lanolin": products/hpa_lanolin_lansinoh.md
+    - "Feeding":
       - "Baby Brezza Formula Pro Advanced": products/baby_brezza_formula_pro_advanced.md
       - "Baby Brezza Bottle Washer Pro": products/baby_brezza_bottle_washer_pro.md
       - "Philips Avent Bottle": products/philips_avent_bottle.md
-      - "Medela Symphony Milk Pump": products/medela_symphony.md
       - "Ana Wiz Breastmilk Storage Bottles": products/ana_wiz_breastmilk_storage_bottles.md
+      - "Medela Symphony Milk Pump": products/medela_symphony.md
       - "Neocate Infant": products/neocate_infant.md
+      - "Aptimil Profutura DuoAdvance Pre": products/aptimil_profortuna_duoadvance_pre.md
+      - "HiPP PRE BIO COMBIOTIK": products/hipp_pre_bio_combiotik.md
+    - "Hygiene and Health":
+      - "HPA Lanolin": products/hpa_lanolin_lansinoh.md
       - "Vienna Breastfeeding Donut": products/vienna_breastfeeding_donut.md
       - "Nobamed Pflegetuch": products/nobamed_pflegetuch.md
       - "PoeticEHome Soft Dry Wipes": products/poeticehome_soft_dry_wipes.md
