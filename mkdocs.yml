@@ -169,6 +169,7 @@ plugins:
   #     enabled_if_env: ENABLE_PDF_EXPORT
   #     render_js: true
   #     headless_chrome_path: "google-chrome"
+  - mkdocs-pdf
 
 
 
@@ -224,6 +225,9 @@ nav:
     - "Sleeping": new_born/sleeping.md
     - "Poop": new_born/poop.md
     - "Outdoor and Traveling": new_born/outdoor_and_traveling.md
+  - "Growth and Development":
+    - "Growth and Development Overview": development/index.md
+    - "Growth Charts": development/growth_charts.md
   - "Documents":
     - "Documents Overview": documents/index.md
     - "Kinderuntersuchungsheft": documents/kinderuntersuchungsheft.md
