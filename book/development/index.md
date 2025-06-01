@@ -36,7 +36,7 @@ gantt
 
 ## Useful Booklets
 
-WHO has a booklets to help parents and caregivers understand and record the growth and development of their children[^who_growth_standards].
+WHO has a booklets to help parents and caregivers understand and record the growth and development of their children[^who_growth_standards]. Please visit [this page](https://www.who.int/toolkits/child-growth-standards) and find the booklets as highlighted below.
 
 ![Growth Record Booklets](assets/who_growth_standard_booklets.png)
 
