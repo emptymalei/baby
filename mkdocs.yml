@@ -228,6 +228,7 @@ nav:
   - "Growth and Development":
     - "Growth and Development Overview": development/index.md
     - "Growth Charts": development/growth_charts.md
+    - "Milestones": development/milestones.md
   - "Documents":
     - "Documents Overview": documents/index.md
     - "Kinderuntersuchungsheft": documents/kinderuntersuchungsheft.md
@@ -238,6 +239,7 @@ nav:
       - "Google Drive": products/google_drive.md
       - "Baby Daybook App": products/baby_daybook.md
       - "Pathways.org": products/pathways_org.md
+      - "HealthyChildren.org": products/healthychildren_org.md
     - "Feeding":
       - "Baby Brezza Formula Pro Advanced": products/baby_brezza_formula_pro_advanced.md
       - "Baby Brezza Bottle Washer Pro": products/baby_brezza_bottle_washer_pro.md
