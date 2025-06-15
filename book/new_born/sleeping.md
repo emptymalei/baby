@@ -316,6 +316,29 @@ Research indicates that parents should encouraging independence and self-soothin
     We use this [[products/cotabaty_baby_night_light|Cotabaty Baby Night Light]] to check the baby during the night.
 
 
+## Crying Before Sleep
+
+There are different hypotheses about the reasons why babies cry before sleep. One of the most popular explanation is that the baby is tired and the body releases cortisol which is also called the stress hormone. Cortisol cause the baby to stay alerted and hard to fall asleep. There are also research on parent behaviors, correlation between crying and parental tolerance of crying was found in a study by Sadeh et al. 2010[@Sadeh2016-hq].
+
+!!! warning "Correlation not Causal"
+
+    However, please note that the study Sadeh et al. 2010[@Sadeh2016-hq] is only about correlations and the causal relationship is not established.
+
+
+We summarize the key factors contributing to infant pre-sleep crying in the following table.
+
+| Category | Specific Factor | Brief Explanation/Mechanism | Relevant Research |
+| :---- | :---- | :---- | :---- |
+| **Physiological** | Immature Sleep Cycles | Frequent REM transitions and light sleep; difficulty returning to sleep between cycles.[@ChildrenNewborn] |  |
+|  | Hunger | Small stomach capacity requiring frequent feeds; crying is a late sign. | This is from our own experience. |
+|  | Overtiredness | Cortisol spike from fatigue makes it harder to settle and stay asleep.[@Philbrook2014-wk] |  |
+| **Environmental** | Environmental Discomforts | Wet diaper, too hot/cold, noise, light, teething pain. | This is from our own experience. |
+|  | Innate Reflexes | Moro reflex causing self-disturbance during sleep onset. | This is from our own experience. |
+| **Behavioral** | Learned Sleep Onset Associations | Dependence on external cues (rocking, nursing) to fall asleep; inability to self-settle without them.[@Sadeh2010-uu] |  |
+| **Temperamental** | "Difficult" Temperament | High reactivity, low adaptability, hypersensitivity, hard to soothe.[@Blampied2008-di;@Boyce2016-lu] |  |
+| **Parental Response Dynamics** | Low Parental Crying Tolerance | Quicker intervention, excessive soothing, attributing more distress, potentially perpetuating sleep problems.[@Sadeh2016-hq] |  |
+
+
 ## Further Reading
 
 
