@@ -332,72 +332,78 @@
     },
     {
       "id": "55",
+      "name": "Alpine Muffy Baby Ear Muffs",
+      "symbolSize": 0,
+      "value": "/products/alpine-muffy-baby-ear-muffs/"
+    },
+    {
+      "id": "56",
       "name": "Klean Kanteen Water Bottle",
       "symbolSize": 1,
       "value": "/products/klean_kanteen_bottle/"
     },
     {
-      "id": "56",
+      "id": "57",
       "name": "Bonding Top",
       "symbolSize": 1,
       "value": "/products/bonding_top/"
     },
     {
-      "id": "57",
+      "id": "58",
       "name": "Cotabaty Baby Night Light",
       "symbolSize": 1,
       "value": "/products/cotabaty_baby_night_light/"
     },
     {
-      "id": "58",
+      "id": "59",
       "name": "Stokke Tripp Trapp",
       "symbolSize": 0,
       "value": "/products/stokke_tripp_trapp/"
     },
     {
-      "id": "59",
+      "id": "60",
       "name": "Zirkulin Bio Flohsamen Schalen",
       "symbolSize": 1,
       "value": "/products/zirkulin_bio_flohsamen_schalen/"
     },
     {
-      "id": "60",
+      "id": "61",
       "name": "Ellie Baby Monitor",
       "symbolSize": 0,
       "value": "/products/ellie_baby_monitor/"
     },
     {
-      "id": "61",
+      "id": "62",
       "name": "St. Elisabeth-Krankenhaus K\u00f6ln-Hohenlind",
       "symbolSize": 4,
       "value": "/facilities/koeln_hohenlind/"
     },
     {
-      "id": "62",
+      "id": "63",
       "name": "Roadmap",
       "symbolSize": 1,
       "value": "/meta/roadmap/"
     },
     {
-      "id": "63",
+      "id": "64",
       "name": "References",
       "symbolSize": 0,
       "value": "/meta/references/"
     },
     {
-      "id": "64",
+      "id": "65",
       "name": "Changelog",
       "symbolSize": 1,
       "value": "/meta/changelog/"
     },
     {
-      "id": "65",
+      "id": "66",
       "name": "Tags",
       "symbolSize": 0,
       "value": "/meta/tags/"
     },
     {
-      "id": "66",
+      "id": "67",
       "name": "Supplementary",
       "symbolSize": 0,
       "value": "/meta/supplementary/"
@@ -430,7 +436,7 @@
     },
     {
       "source": "6",
-      "target": "61"
+      "target": "62"
     },
     {
       "source": "5",
@@ -458,19 +464,19 @@
     },
     {
       "source": "5",
-      "target": "56"
+      "target": "57"
     },
     {
       "source": "5",
-      "target": "55"
+      "target": "56"
     },
     {
       "source": "7",
-      "target": "61"
+      "target": "62"
     },
     {
-      "source": "62",
-      "target": "64"
+      "source": "63",
+      "target": "65"
     },
     {
       "source": "8",
@@ -526,7 +532,7 @@
     },
     {
       "source": "9",
-      "target": "61"
+      "target": "62"
     },
     {
       "source": "9",
@@ -574,7 +580,7 @@
     },
     {
       "source": "12",
-      "target": "57"
+      "target": "58"
     },
     {
       "source": "1",
@@ -590,7 +596,7 @@
     },
     {
       "source": "3",
-      "target": "59"
+      "target": "60"
     },
     {
       "source": "39",
@@ -598,7 +604,7 @@
     },
     {
       "source": "31",
-      "target": "61"
+      "target": "62"
     },
     {
       "source": "37",
